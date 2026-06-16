@@ -68,7 +68,7 @@ const Navbar = () => {
 
  {menuOpen && (
             <div
-            className="fixed inset-x-0 top-20 z-40 glass-layer  p-6 md:hidden">
+            className="fixed inset-x-0 top-15 z-40 glass-layer  p-6 md:hidden">
                 <div className="  flex flex-col gap-4">
                 {navLinks.map((link) => (
                  <NavLink
