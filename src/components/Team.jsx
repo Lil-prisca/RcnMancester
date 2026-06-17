@@ -28,7 +28,7 @@ const Team = () => {
                 experiences the transformative power of a deep, scholarly, and
                 experiential walk with God."
               </p>
-              <div class="flex gap-4">
+              {/* <div class="flex gap-4">
                 <a
                   class="text-outline hover:text-primary transition-colors"
                   href="#"
@@ -41,7 +41,7 @@ const Team = () => {
                 >
                   <span class="material-symbols-outlined">share</span>
                 </a>
-              </div>
+              </div> */}
             </div>
           </div>
           {/* <!-- Support Team Placeholder --> */}
