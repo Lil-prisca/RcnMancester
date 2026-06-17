@@ -4,9 +4,9 @@ import setman2 from "../assets/AAO.jpg";
 
 const Team = () => {
   return (
-    <section class="py-5 bg-surface-container">
+    <section class="py-5 pb-10 bg-primary/30">
       <div class="px-16 max-w-7xl mx-auto">
-        <div class="mb-16">
+        <div class="mb-5">
           <h2 class="font-headline-lg text-headline-lg">Spiritual Oversight</h2>
           <div class="w-20 h-1 bg-primary mt-4"></div>
         </div>

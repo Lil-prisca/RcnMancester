@@ -1,7 +1,7 @@
 const SpotlightEvent = () => {
   return (
-    <section class="py-32 px-6 md:px-12">
-      <div class="max-w-7xl mx-auto bg-primary rounded-3xl overflow-hidden relative min-h-[600px] flex items-center">
+    <section class="py-12 px-6 md:px-12">
+      <div class="max-w-7xl mx-auto bg-primary rounded-3xl overflow-hidden relative min-h-[600px] lg:min-h-[300px] flex items-center">
         <div class="absolute inset-0 z-0">
           <img
             class="w-full h-full object-cover opacity-30"
