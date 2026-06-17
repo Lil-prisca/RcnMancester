@@ -4,8 +4,8 @@ import setman2 from "../assets/AAO.jpg";
 
 const Team = () => {
   return (
-    <section class="py-5 pb-10 bg-primary/30">
-      <div class="px-16 max-w-7xl mx-auto">
+    <section class=" px-0 py-5 pb-10 bg-primary/30">
+      <div class="px-5  md:px-10 max-w-7xl mx-auto">
         <div class="mb-5">
           <h2 class="font-headline-lg text-headline-lg">Spiritual Oversight</h2>
           <div class="w-20 h-1 bg-primary mt-4"></div>
@@ -13,9 +13,9 @@ const Team = () => {
         <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
           {/* <!-- Main Pastor --> */}
           <div class="md:col-span-2 flex flex-col md:flex-row bg-white rounded-2xl overflow-hidden shadow-sm">
-            <div class="md:w-1/2 aspect-[4/5]">
+            <div class=" md:w-1/2 aspect-[4/5]">
               <img
-                class="w-full h-full object-cover"
+                class="w-full md:h-full h-100 object-cover"
                 data-alt="A professional, high-contrast portrait of a male pastor in a sophisticated dark suit."
                 src={setman2}
               />
