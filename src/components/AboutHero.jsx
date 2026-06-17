@@ -10,9 +10,9 @@ const AboutHero = () => {
         <div class="absolute inset-0 bg-linear-to-b from-primary via-transparent to-primary"></div>
       </div>
       <div class="relative z-10 text-left px-[20px] md:px-80px max-w-4xl">
-        <div class="  mb-3 inline-block px-4 py-1 rounded-full border  border-tertiary text-tertiary text-[14px] uppercase tracking-[0.2em]">
-          The Apostolic Mandate
-        </div>
+        <span className="inline-block text-tertiary font-label text-sm tracking-[0.2em] mb-6 font-bold uppercase">
+          THE APOSTOLIC MANDATE
+        </span>
         <h1 class=" text-[40px] md:text-[72px] mb-8 leading-tight">
           About Remnant <br class="hidden md:block" /> Christian Network{" "}
           <span class="text-secondary">Manchester</span>
