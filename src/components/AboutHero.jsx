@@ -1,6 +1,6 @@
 const AboutHero = () => {
   return (
-    <section class="relative min-h-[819px] flex items-center justify-center overflow-hidden ">
+    <section class="relative min-h-150 md:min-h-150 flex items-center justify-center overflow-hidden ">
       <div class="absolute inset-0 z-0">
         <img
           class="w-full h-full object-cover opacity-40 grayscale hover:grayscale-0 transition-all duration-1000"
@@ -9,15 +9,15 @@ const AboutHero = () => {
         />
         <div class="absolute inset-0 bg-linear-to-b from-primary via-transparent to-primary"></div>
       </div>
-      <div class="relative z-10 text-center px-[30px] md:px-80px max-w-4xl">
-        <div class="mb-3 inline-block px-4 py-1 rounded-full border border-secondary text-secondary text-[14px] uppercase tracking-[0.2em]">
+      <div class="relative z-10 text-left px-[20px] md:px-80px max-w-4xl">
+        <div class="mb-3 inline-block px-4 py-1 rounded-full border border-tertiary text-tertiary text-[14px] uppercase tracking-[0.2em]">
           The Apostolic Mandate
         </div>
-        <h1 class=" text-[40px] md:text[72px] mb-8 leading-tight">
-          About Remnant Christian <br class="hidden md:block" /> Network{" "}
+        <h1 class=" text-[40px] md:text-[72px] mb-8 leading-tight">
+          About Remnant <br class="hidden md:block" /> Christian Network{" "}
           <span class="text-secondary">Manchester</span>
         </h1>
-        <p class=" text-[18px] text-on-surface-variant max-w-2xl mx-auto">
+        <p class=" text-[18px] text-on-primary max-w-2xl ">
           Raising a generation of priests who will represent the government of
           God in the heart of the United Kingdom.
         </p>
