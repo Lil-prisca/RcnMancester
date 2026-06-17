@@ -24,8 +24,25 @@
   --color-error: #ba1a1a;
 }
 
- .glass-layer {
-            background: rgba(25, 20, 62, 0.4);
-            backdrop-filter: blur(24px);
-            border: 1px solid rgba(255, 255, 255, 0.1);
-        }
+.body-lg {
+  font-size: "18px";
+  /* lineheight: "28px"; */
+  /* fontweight: "400"; */
+}
+
+.glass-layer {
+  background: rgba(25, 20, 62, 0.4);
+  backdrop-filter: blur(24px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+.glass {
+  backdrop-filter: blur(24px);
+  border: 1px solid rgba(173, 159, 159, 0.1);
+}
+.alchemist-glow {
+  background: radial-gradient(
+    circle,
+    rgba(223, 100, 39, 0.15) 0%,
+    rgba(223, 100, 39, 0) 70%
+  );
+}
