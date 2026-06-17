@@ -10,7 +10,7 @@ const AboutHero = () => {
         <div class="absolute inset-0 bg-linear-to-b from-primary via-transparent to-primary"></div>
       </div>
       <div class="relative z-10 text-left px-[20px] md:px-80px max-w-4xl">
-        <div class=" bg-on-primary mb-3 inline-block px-4 py-1 rounded-full border border-tertiary text-tertiary text-[14px] uppercase tracking-[0.2em]">
+        <div class="  mb-3 inline-block px-4 py-1 rounded-full border  border-tertiary text-tertiary text-[14px] uppercase tracking-[0.2em]">
           The Apostolic Mandate
         </div>
         <h1 class=" text-[40px] md:text-[72px] mb-8 leading-tight">

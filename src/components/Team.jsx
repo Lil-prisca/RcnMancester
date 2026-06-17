@@ -1,3 +1,7 @@
+import { Link } from "react-router-dom";
+import setman from "../assets/setman-2.webp";
+import setman2 from "../assets/AAO.jpg";
+
 const Team = () => {
   return (
     <section class="py-5 bg-surface-container">
@@ -13,20 +17,20 @@ const Team = () => {
               <img
                 class="w-full h-full object-cover"
                 data-alt="A professional, high-contrast portrait of a male pastor in a sophisticated dark suit."
-                src="https://lh3.googleusercontent.com/aida-public/AB6AXuBF-tn032BK3ORra11SeuQvqbma3gSQJv1cHVtpCeqfAWREptZLtsQh0IB4_RIOAOkox_S5a4-B4xIosgYkAlqFFjNijnSDzR5O9av2L2Bkau6C2zFDOfoL_3i9H1JENnMJDATeENkib2MmqCRUH9Zvs6gEqEPwWL7pwDs5GFwvMX58hp_P3OUh6YyvXbu6dyoSGMnMiMbixPCpfziZLSf2B4JNr1uzS-8WcSrjl4Ai-_UX_IrfXAUxaxTLwfVOBLpcyMFeothvjQY"
+                src={setman2}
               />
             </div>
             <div class="md:w-1/2 p-12 flex flex-col justify-center">
-              <span class="font-label-sm text-label-sm text-primary mb-2">
-                Resident Pastor
+              <span class="font-label-sm text-[24px] text-primary mb-2">
+                Apostle Arome Osayi
               </span>
-              <h3 class="font-headline-md text-headline-md mb-4">
-                Pastor Kolawole Olagunju
+              <h3 class="font-headline-md text-[10px] mb-4">
+                Set Man, Remnant Christian Network
               </h3>
               <p class="font-body-md text-on-surface-variant mb-6 italic">
-                "Our mandate is to ensure every believer in Manchester
-                experiences the transformative power of a deep, scholarly, and
-                experiential walk with God."
+                "Called to restore apostolic Christianity and prepare the church
+                for Christ's return through powerful teaching and international
+                missions.."
               </p>
               {/* <div class="flex gap-4">
                 <a
@@ -45,17 +49,24 @@ const Team = () => {
             </div>
           </div>
           {/* <!-- Support Team Placeholder --> */}
-          <div class="bg-primary p-12 rounded-2xl text-white flex flex-col justify-end">
+          <div class="bg-primary px-12 py-8 rounded-2xl text-white flex flex-col justify-end">
+            <img
+              src={setman}
+              alt="resident pastor"
+              className="h-50 w-50 m-auto rounded-2xl mb-2  "
+            />
             <h3 class="font-headline-md text-headline-md mb-4">
-              The Leadership Team
+              Manchester Leadership Team
             </h3>
             <p class="font-body-md text-on-primary-container opacity-90 mb-8">
               Guided by a plurality of elders and dedicated ministry leads
               focused on administration, youth, and community outreach.
             </p>
-            <button class="border border-white/30 px-6 py-3 rounded-full font-label-sm text-label-sm hover:bg-white hover:text-primary transition-all">
-              View Full Team
-            </button>
+            <Link to="/team-members">
+              <button class="border border-white/30 px-6 py-3 rounded-full font-label-sm text-label-sm hover:bg-white hover:text-primary transition-all">
+                View Full Team
+              </button>
+            </Link>
           </div>
         </div>
       </div>
