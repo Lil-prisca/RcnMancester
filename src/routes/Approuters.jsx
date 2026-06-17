@@ -3,6 +3,7 @@ import Home from "../pages/HomePage";
 import About from "../pages/AboutPage";
 import Contact from "../pages/ContactPage";
 import OurActivities from "../pages/OurActivitiesPage";
+import TeamsPage from "../pages/TeamsPage";
 
 const Approuters = () => {
   return (
@@ -12,6 +13,7 @@ const Approuters = () => {
         <Route path="/about-us" element={<About />} />
         <Route path="/contact-us" element={<Contact />} />
         <Route path="/our-activities" element={<OurActivities />} />
+        <Route path="/team-members" element={<TeamsPage />} />
       </Routes>
     </>
   );
