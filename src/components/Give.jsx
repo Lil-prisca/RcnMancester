@@ -1,0 +1,31 @@
+const Give = () => {
+  return (
+    <section className="px-8 py-5 max-w-7xl mx-auto">
+      <div className="relative overflow-hidden rounded-3xl md:h-140 bg-primary text-white px-5 py-10 md:px-10 md:py-15">
+        <div className="absolute inset-0 opacity-20 pointer-events-none">
+          <img
+            alt=""
+            className="w-full h-full object-cover"
+            data-alt="abstract architectural close-up of a modern cathedral with dramatic light streaming through narrow windows creating sharp geometric shadows"
+            src="https://lh3.googleusercontent.com/aida-public/AB6AXuA_Vzjqsb6X2ZWzupZIC7Up3cqIGP79WJT1rYX559hvOQVTWlv8iBkY6mZJXS7nd4nZp0lsBHLOXQVG_JkrfQypeEU3BRLQcI2sXj6NeaR8nNzAQ0gK0Q5fwJk-ZeGK-P_9QGwd6N1c1t3-ZtqkwszmOud2WP2WD6hS4y4veP7QMRVkGu1-htdxsOQEMa8OuUXWPGpb6C1kOaBfLe9ctDkX_DaPe5L3uWEh7Y2sgGsi3VyRIS6ZPkUd6eaE7HK_tv0ruNckvT8wPBw"
+          />
+        </div>
+        <div className="relative z-10 max-w-2xl">
+          <span className="inline-block px-4 py-1 rounded-full bg-secondary text-white text-xs font-bold tracking-widest uppercase mb-6 font-label">
+            PARTNER WITH US
+          </span>
+          <h1 className="text-5xl md:text-7xl font-extrabold tracking-tight mb-8 leading-tight">
+            Impact Lives. <br />
+            <span className="text-secondary">Transform Communities.</span>
+          </h1>
+          <p className="text-lg md:text-xl text-white/80 leading-relaxed">
+            Whether you are reaching out for support or choosing to give back,
+            you are an essential part of the RCN Manchester story.
+          </p>
+        </div>
+      </div>
+    </section>
+  );
+};
+
+export default Give;

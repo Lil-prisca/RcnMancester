@@ -39,7 +39,10 @@ const Navbar = () => {
             {link.label}
           </NavLink>
         ))}
-        <Link to="/" className="bg-[#BF5A16] px-4 py-1 rounded-xl text-white">
+        <Link
+          to="/give"
+          className="bg-[#BF5A16] px-4 py-1 rounded-xl text-white"
+        >
           Give
         </Link>
       </div>

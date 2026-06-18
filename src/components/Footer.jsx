@@ -46,7 +46,7 @@ const Footer = () => {
             </div>
             <p className=" flex h-fit text-xl  ">RCN Manchester</p>
           </div>
-          <p class="text-on-primary font-body-md max-w-md mb-5 lg:mb-2 ">
+          <p className="text-on-primary font-body-md max-w-md mb-5 lg:mb-2 ">
             Remnant Christian Network Manchester is a community of believers
             dedicated to the pursuit of the authentic apostolic life and the
             restoration of God's fire in the hearts of men.
