@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 const Hero = () => {
   return (
     <section className="relative h-[90vh] flex items-center overflow-hidden bg-[#19143E]">
@@ -23,12 +24,16 @@ const Hero = () => {
             transformative power of the Spirit in the heart of the city.
           </p>
           <div className="flex flex-col sm:flex-row gap-4">
-            <button className="bg-secondary hover:bg-secondary/90 text-white px-10 py-4 rounded-lg font-bold text-lg transition-all active:scale-95">
-              Our Activities
-            </button>
-            <button className="bg-white/10 hover:bg-white/20 backdrop-blur-md text-white border border-white/20 px-10 py-4 rounded-lg font-bold text-lg transition-all">
-              Watch Live
-            </button>
+            <Link to="/">
+              <button className="bg-secondary hover:bg-secondary/90 text-white px-10 py-4 rounded-lg font-bold text-lg transition-all active:scale-95">
+                Our Activities
+              </button>
+            </Link>
+            <Link to="/">
+              <button className="bg-white/10 hover:bg-white/20 backdrop-blur-md text-white border border-white/20 px-10 py-4 rounded-lg font-bold text-lg transition-all">
+                I am New
+              </button>
+            </Link>
           </div>
         </div>
       </div>

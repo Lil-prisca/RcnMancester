@@ -18,7 +18,7 @@ const socials = [
   {
     icon: FaInstagram,
     href: "https://instagram.com/yourpage",
-    color: "#E1306C",
+    color: "#df6427",
     label: "Instagram",
   },
   {
@@ -36,10 +36,10 @@ const socials = [
 ];
 const Footer = () => {
   return (
-    <div className="bg-[#19143E] pt-5">
-      <div className="bg-[#19143E] text-white  flex flex-col md:flex-row md:justify-between gap-10 lg:gap-20   py-3 ">
+    <div className="bg-[#19143E] pt-5   ">
+      <div className=" w-[90%] max-w-400 mx-auto  text-white  flex flex-col justify-between md:flex-row  py-3 ">
         {/* curc Infoo */}
-        <div className=" w-100 md:w-200 lg:w-200 px-5">
+        <div className=" w-100 md:w-200  px-5">
           <div className="flex gap-2 items-center ">
             <div className=" w-5 h-12">
               <img src={Logo} alt="" />
@@ -51,7 +51,7 @@ const Footer = () => {
             dedicated to the pursuit of the authentic apostolic life and the
             restoration of God's fire in the hearts of men.
           </p>
-          <div className="  mt-3 flex items-center gap-3">
+          <div className="  mt-3 flex items-center gap-3 mb-3">
             {socials.map((social) => {
               const Icon = social.icon;
               return (
@@ -107,12 +107,8 @@ const Footer = () => {
           </div>
         </div>
       </div>
-      <div className="px-[20px] md:px-[80px] py-8 border-t border-white/5 max-w-[1290px] mx-auto flex flex-col md:flex-row justify-between items-center gap-4 text-on-primary text-label-md">
+      <div className="px-5 md:px-20 py-5 border-t border-white/5 max-w-323 m-auto  text-center  text-on-primary ">
         <div>© 2026 RCN Manchester. All rights reserved.</div>
-        <div className="flex gap-8">
-          <span>International HQ: Nigeria</span>
-          <span>UK Registered Charity</span>
-        </div>
       </div>
     </div>
   );

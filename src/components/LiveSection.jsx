@@ -30,10 +30,6 @@ const LiveSection = () => {
         </div>
         <div class="max-w-7xl mx-auto px-12 flex flex-col md:flex-row items-center gap-20">
           <div class="w-full md:w-1/2 space-y-8 order-2 md:order-1">
-            <div class="inline-flex items-center px-4 py-1 rounded-full bg-error-container text-on-error-container text-xs font-bold uppercase tracking-widest">
-              <span class="w-2 h-2 rounded-full bg-error mr-2 animate-pulse"></span>{" "}
-              Live Now
-            </div>
             <h2 class="font-headline text-5xl md:text-6xl text-primary">
               Join the Moment.
             </h2>

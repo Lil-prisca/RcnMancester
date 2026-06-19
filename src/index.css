@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap");
+
 @import "tailwindcss";
 
 @theme {
@@ -22,6 +24,8 @@
   --color-outline-variant: #c6c5d4;
 
   --color-error: #ba1a1a;
+
+  --font-sans: "Source Sans 3", sans-serif;
 }
 
 .body-lg {

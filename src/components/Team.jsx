@@ -6,9 +6,11 @@ const Team = () => {
   return (
     <section class=" px-0 py-5 pb-10 bg-primary/30">
       <div class="px-5  md:px-10 max-w-7xl mx-auto">
-        <div class="mb-5">
-          <h2 class="font-headline-lg text-headline-lg">Spiritual Oversight</h2>
-          <div class="w-20 h-1 bg-primary mt-4"></div>
+        <div class="mb-10 mt-4">
+          <h2 class="font-headline-lg font-sans   text-3xl font-bold text-headline-lg">
+            Spiritual Oversight
+          </h2>
+          <div class="w-20 h-1 bg-primary mt-1"></div>
         </div>
         <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
           {/* <!-- Main Pastor --> */}

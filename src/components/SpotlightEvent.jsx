@@ -12,9 +12,6 @@ const SpotlightEvent = () => {
         </div>
         <div class="relative z-10 p-12 md:p-24 w-full flex flex-col md:flex-row gap-12 justify-between items-center">
           <div class="max-w-xl">
-            <h2 class="text-xs font-label uppercase tracking-[0.4em] text-tertiary mb-6">
-              Spotlight Event
-            </h2>
             <h3 class="text-5xl md:text-7xl font-serif text-white leading-none mb-8">
               Watchmen &amp; <br />
               <span class="italic text-on-primary-container">Gatekeepers</span>
@@ -38,7 +35,7 @@ const SpotlightEvent = () => {
               <span class="text-2xl font-serif">Cumbria Sanctuary Hall</span>
             </div>
             <button class="w-full bg-white text-primary py-4 rounded-xl font-label text-sm uppercase tracking-widest hover:bg-tertiary hover:text-white transition-all">
-              Register Now
+              See More Details
             </button>
           </div>
         </div>
