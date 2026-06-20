@@ -9,7 +9,7 @@ const AboutHero = () => {
           alt="A cinematic, low-angle photograph of Manchester's g"
           src="https://lh3.googleusercontent.com/aida-public/AB6AXuDn2eUMHMdLxpfmrn2OQ34gGf-wr7hjinRmRSRNIVQacs2_1a8MStWIVaI22PERloTac0uQaPslYZyMzC_IV0X37w1HfQkRiEEXeNcQWpcT5q_QlUyzgWc4HPwYpkiJmcqRafSkmEZa9z-fMgOx2s0fM0jXnvK1DH5cHzbEF7SRVwCPe5aBl_eErYTiOTS31gCIiwDyrm8ZuzJ2q6tNkqhE98RNRrYT9D0NsSOmwysYPV05CVw0-J1VFad4kXo9I2YAgYoDnFXEcqo"
         />
-        <div className="absolute inset-0 bg-linear-to-b from-primary via-transparent to-primary"></div>
+        <div className="absolute inset-0 bg-primary/80"></div>
       </div>
 
       <div className="relative z-10 text-left px-[20px] md:px-[80px] max-w-4xl">
@@ -26,7 +26,7 @@ const AboutHero = () => {
           initial={{ y: 60, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
           transition={{ duration: 0.9, delay: 0.5, ease: [0.22, 1, 0.36, 1] }}
-          className="mb-8 leading-tight text-6xl md:text-7xl font-extrabold tracking-[-0.04em]"
+          className="mb-8 leading-tight text-on-primary text-6xl md:text-7xl font-extrabold tracking-[-0.04em]"
         >
           About Remnant <br className="hidden md:block" /> Christian Network{" "}
           <span className="text-secondary">Manchester</span>

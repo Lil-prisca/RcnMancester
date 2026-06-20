@@ -1,13 +1,19 @@
+import worship from "../assets/Worship.mp4";
 const SpotlightEvent = () => {
   return (
     <section class="py-12 px-6 md:px-12">
       <div class="max-w-7xl mx-auto bg-primary rounded-3xl overflow-hidden relative min-h-[600px] lg:min-h-[300px] flex items-center">
         <div class="absolute inset-0 z-0">
-          <img
+          <video
             class="w-full h-full object-cover opacity-30"
             data-alt="dramatic lighting in a grand hall with many people gathering for a spiritual conference event"
-            src="https://lh3.googleusercontent.com/aida-public/AB6AXuArAyRE-OXHviOF9hoaGMSOGVdkzYdFy4d23F_0jHA65s2yQsXBBBc_9P85FLKaViFEUgQQxT5RyDpl5s-xhdeJXvPAXIejXOAKS6WQz1X3CXiV10qj3RByECbefDt1HL-uBvwtNHx5V7l3Me-TghsTtij_IFEy5iipXb9WkGJ2wZw3VczSRGHXvQTwWiGK3mazAvNYpwJJTefLCpDJSKXFNiA5DO8psZJzFIH476a5H1Xh9nEezluDdpYHq2wxCpNr0G1Qw279UTg"
-          />
+            src={worship}
+            width="100%"
+            loop
+            autoPlay
+            muted
+            loop
+          ></video>
           <div class="absolute inset-0 bg-gradient-to-t from-primary via-transparent to-transparent"></div>
         </div>
         <div class="relative z-10 p-12 md:p-24 w-full flex flex-col md:flex-row gap-12 justify-between items-center">

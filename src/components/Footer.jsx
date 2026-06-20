@@ -39,7 +39,7 @@ const Footer = () => {
     <div className="bg-[#19143E] pt-5   ">
       <div className=" w-[90%] max-w-400 mx-auto  text-white  flex flex-col justify-between md:flex-row  py-3 ">
         {/* curc Infoo */}
-        <div className=" w-100 md:w-200  px-5">
+        <div className=" w-90 md:w-200  px-5">
           <div className="flex gap-2 items-center ">
             <div className=" w-5 h-12">
               <img src={Logo} alt="" />

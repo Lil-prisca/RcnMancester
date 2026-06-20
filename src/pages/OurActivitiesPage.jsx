@@ -1,6 +1,7 @@
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import Activity from "../components/Activity";
+import Gallery from "../components/Gallery";
 
 const OurActivitiesPage = () => {
   return (
@@ -8,7 +9,8 @@ const OurActivitiesPage = () => {
       <Navbar />
       <div className="w-100% max-w-400 m-auto">
         <Activity />
-        <p> OurActivitiesPage</p>
+
+        <Gallery />
       </div>
       <Footer />
     </div>

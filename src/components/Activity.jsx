@@ -1,14 +1,14 @@
 const Activity = () => {
   return (
-    <section class="py-32 bg-primary">
+    <section class="py-5 bg-primary">
       <div class="max-w-7xl mx-auto px-12">
-        <div class="mb-20 text-center md:text-left">
+        <div class="mb-10 text-center md:text-left">
           <h2 class="font-headline text-5xl text-on-primary mb-4">
             Our Activities
           </h2>
           <div class="h-1 w-24 bg-on-primary"></div>
         </div>
-        <div class="grid grid-cols-1 md:grid-cols-12 gap-6 h-auto md:h-200">
+        <div class="grid grid-cols-1 md:grid-cols-12 gap-6 h-auto md:h-150">
           {/* <!-- Large Featured --> */}
           <div class=" col-span md:col-span-8 group relative overflow-hidden rounded-xl bg-surface-container-low">
             <img
@@ -18,11 +18,11 @@ const Activity = () => {
             />
             <div class="absolute inset-0 bg-gradient-to-t from-[#0e0e13] via-transparent to-transparent"></div>
             <div class="absolute bottom-10 left-10">
-              <span class="font-label text-primary-fixed-dim text-xs tracking-widest uppercase mb-2 block">
+              <span class="font-label text-on-primary text-xs tracking-widest uppercase mb-2 block">
                 Sundays @ 10:30AM
               </span>
               <h3 class="font-headline text-4xl text-white">The Gathering</h3>
-              <p class="text-on-surface-variant mt-2 max-w-sm">
+              <p class="text-on-primary mt-2 max-w-sm">
                 The heartbeat of our community. Join us as we lift one voice in
                 the presence of God.
               </p>
@@ -38,7 +38,7 @@ const Activity = () => {
             <div class="absolute inset-0 bg-gradient-to-t from-[#0e0e13] via-transparent to-transparent"></div>
             <div class="absolute bottom-10 left-10">
               <h3 class="font-headline text-3xl text-white">The Studio</h3>
-              <p class="text-on-surface-variant mt-2">
+              <p class="text-on-primary mt-2">
                 Cultivating the sound of heaven.
               </p>
             </div>
@@ -53,7 +53,7 @@ const Activity = () => {
             <div class="absolute inset-0 bg-gradient-to-t from-[#0e0e13] via-transparent to-transparent"></div>
             <div class="absolute bottom-10 left-10">
               <h3 class="font-headline text-3xl text-white">The Well</h3>
-              <p class="text-on-surface-variant mt-2">
+              <p class="text-on-primary mt-2">
                 Deep intercession and quiet rest.
               </p>
             </div>
@@ -68,7 +68,7 @@ const Activity = () => {
             <div class="absolute inset-0 bg-gradient-to-t from-[#0e0e13] via-transparent to-transparent"></div>
             <div class="absolute bottom-10 left-10">
               <h3 class="font-headline text-3xl text-white">The Streets</h3>
-              <p class="text-on-surface-variant mt-2">
+              <p class="text-on-primary mt-2">
                 Taking the light of the presence into the dark corners of our
                 city.
               </p>
