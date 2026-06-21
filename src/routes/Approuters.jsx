@@ -6,6 +6,7 @@ import OurActivities from "../pages/OurActivitiesPage";
 import TeamsPage from "../pages/TeamsPage";
 import GivePage from "../pages/GivePage";
 import IAmNewPage from "../pages/IamnewPage";
+import RFHStore from "../pages/Rfhstore";
 
 const Approuters = () => {
   return (
@@ -18,6 +19,7 @@ const Approuters = () => {
         <Route path="/our-activities" element={<OurActivities />} />
         <Route path="/team-members" element={<TeamsPage />} />
         <Route path="/iamnew" element={<IAmNewPage />} />
+        <Route path="/rfhstore" element={<RFHStore />} />
       </Routes>
     </>
   );

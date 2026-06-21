@@ -51,8 +51,8 @@ const MissionSection = () => {
               }}
               className="text-primary text-4xl md:text-6xl font-headline font-bold mb-8 leading-tight"
             >
-              Restoring the Divine <br />
-              <span className="text-tertiary">Legacy</span>.
+              Striving For the <br /> Rebirth of <br />
+              <span className="text-tertiary">Apostolic Christianity</span>
             </motion.h2>
 
             <motion.div
