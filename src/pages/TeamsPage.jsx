@@ -2,28 +2,24 @@ import Navbar from "../components/Navbar";
 import setman from "../assets/setman-2.webp";
 import man1 from "../assets/Rev. George Agbike.jpeg";
 import woman from "../assets/aab.png";
-import man2 from "../assets/pke.jpeg";
+import Footer from "../components/Footer";
+// import man2 from "../assets/pke.jpeg";
 const TeamMember = [
   {
     img: setman,
     name: "Apostle Arome Osayi",
-    position: "Set Man, Remnant Christian Network",
+    position: "Set Man, Remnant Christian Network Global",
   },
 
   {
     img: woman,
-    name: "A a b",
-    position: "Set Man, Remnant Christian Network",
+    name: "Reverend Dinna Osayi",
+    position: "Co Pastor, Remnant Christian Network  Global",
   },
   {
     img: man1,
     name: "Rev. George Agbike",
-    position: "Set Man, Remnant Christian Network",
-  },
-  {
-    img: man2,
-    name: "Apostle Arome Osayi",
-    position: "Set Man, Remnant Christian Network",
+    position: "Point man, Remnant Christian Network Manchester",
   },
 ];
 
@@ -31,7 +27,7 @@ const TeamsPage = () => {
   return (
     <>
       <Navbar />
-      <div className="w-full max-w-400 m-auto mt-3">
+      <div className="w-full max-w-400 m-auto mt-3 mb-10">
         <h1 className="text-center text-primary text-[30px]  ">
           Manchester Team
         </h1>
@@ -56,6 +52,7 @@ const TeamsPage = () => {
           ))}
         </div>
       </div>
+      <Footer />
     </>
   );
 };
