@@ -5,6 +5,7 @@ import Contact from "../pages/ContactPage";
 import OurActivities from "../pages/OurActivitiesPage";
 import TeamsPage from "../pages/TeamsPage";
 import GivePage from "../pages/GivePage";
+import IAmNewPage from "../pages/IamnewPage";
 
 const Approuters = () => {
   return (
@@ -16,6 +17,7 @@ const Approuters = () => {
         <Route path="/contact-us" element={<Contact />} />
         <Route path="/our-activities" element={<OurActivities />} />
         <Route path="/team-members" element={<TeamsPage />} />
+        <Route path="/iamnew" element={<IAmNewPage />} />
       </Routes>
     </>
   );

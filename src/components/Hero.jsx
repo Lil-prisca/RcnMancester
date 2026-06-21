@@ -55,7 +55,7 @@ const Hero = () => {
                 Our Activities
               </button>
             </Link>
-            <Link to="/">
+            <Link to="/iamnew">
               <button className="bg-white/10 hover:bg-white/20 backdrop-blur-md text-white border border-white/20 px-10 py-4 rounded-lg font-bold text-lg transition-all">
                 I am New
               </button>
