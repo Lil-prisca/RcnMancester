@@ -9,11 +9,11 @@ import img7 from "../assets/Aactivities/img7.jpeg";
 import img8 from "../assets/Aactivities/img8.jpeg";
 import img9 from "../assets/Aactivities/img9.jpeg";
 import img10 from "../assets/Aactivities/img10.jpeg";
-import img11 from "../assets/Aactivities//img11.jpeg";
+import img11 from "../assets/Aactivities/img11.jpeg";
 import img12 from "../assets/Aactivities/img12.jpeg";
 import img13 from "../assets/Aactivities/img13.jpeg";
 import img14 from "../assets/Aactivities/img14.jpeg";
-// import img15 from "../assets/Aactivities/img15.jpeg";
+
 const Images = [
   { id: 1, img: img1 },
   { id: 2, img: img2 },
@@ -31,21 +31,27 @@ const Images = [
   { id: 14, img: img14 },
 ];
 
+// duplicate for seamless infinite scroll
+const loopedImages = [...Images, ...Images];
+
 const Gallery = () => {
   return (
-    <div className=" overflow-hidden w-full group">
-      <div className="flex w-max animate-scroll group-hover:[animaton-play-state:paused">
-        {Images.map((value, i) => (
+    <div className="overflow-hidden w-full group">
+      <div className="flex w-max animate-scroll group-hover:[animation-play-state:paused]">
+        {loopedImages.map((value, i) => (
           <motion.div
-            key={value.title}
+            key={`${value.id}-${i}`}
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: false }}
-            transition={{ delay: i * 0.1, duration: 0.6 }}
-            className=" h-50 -100 flex shrink-0 px-1 py-5 mx-1 b-primary rounded-2xl"
+            viewport={{ once: true }}
+            transition={{ delay: (i % Images.length) * 0.1, duration: 0.6 }}
+            className="h-50 w-auto flex shrink-0 px-1 py-5 mx-1  rounded-2xl"
           >
-            <img src={value.img} alt="" />
-            <div>{value.id}</div>
+            <img
+              src={value.img}
+              alt={`Gallery image ${value.id}`}
+              className="h-full w-auto object-cover rounded-2xl"
+            />
           </motion.div>
         ))}
       </div>
