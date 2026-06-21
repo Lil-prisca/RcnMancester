@@ -1,5 +1,10 @@
 import Logo from "../assets/rcn-mark.webp";
-import { FaFacebookF, FaInstagram, FaYoutube, FaTiktok } from "react-icons/fa";
+import {
+  FaFacebookF,
+  FaInstagram,
+  FaYoutube,
+  FaWhatsapp,
+} from "react-icons/fa";
 
 import { Link } from "react-router-dom";
 const Navigations = [
@@ -8,30 +13,31 @@ const Navigations = [
   { label: "Locations ", to: "/" },
   { label: "Give ", to: "/" },
 ];
+
 const socials = [
   {
     icon: FaFacebookF,
-    href: "https://facebook.com/yourpage",
+    href: "https://www.facebook.com/profile.php?id=61559539801601",
     color: "#1877F2",
     label: "Facebook",
   },
   {
     icon: FaInstagram,
-    href: "https://instagram.com/yourpage",
+    href: "https://www.instagram.com/rcnmanchester",
     color: "#df6427",
     label: "Instagram",
   },
   {
     icon: FaYoutube,
-    href: "https://youtube.com/yourchannel",
+    href: "https://www.youtube.com/@RCNManchester",
     color: "#FF0000",
     label: "YouTube",
   },
   {
-    icon: FaTiktok,
-    href: "https://tiktok.com/@yourpage",
-    color: "#ffffff",
-    label: "TikTok",
+    icon: FaWhatsapp,
+    href: "https://chat.whatsapp.com/DQ1vPaiDpk7IOhZubaaw1q",
+    color: "#00B328",
+    label: "WhatsApp",
   },
 ];
 const Footer = () => {
