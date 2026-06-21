@@ -7,7 +7,7 @@ const GivePage = () => {
   return (
     <div>
       <Navbar />
-      <div>
+      <div className="w-100% max-w-400 m-auto">
         <Give />
         <GiveSection />
       </div>

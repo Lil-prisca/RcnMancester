@@ -1,7 +1,7 @@
 const Give = () => {
   return (
-    <section className="px-8 py-5 max-w-7xl mx-auto">
-      <div className="relative overflow-hidden rounded-3xl md:h-140 bg-primary text-white px-5 py-10 md:px-10 md:py-15">
+    <section className="   ">
+      <div className=" bg-primary w-full h-140  relative overflow-hidden  px-5 py-10 md:px-10 md:py-15 text-white ">
         <div className="absolute inset-0 opacity-20 pointer-events-none">
           <img
             alt=""
