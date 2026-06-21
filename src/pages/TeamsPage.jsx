@@ -9,14 +9,15 @@ const TeamMember = [
     name: "Apostle Arome Osayi",
     position: "Set Man, Remnant Christian Network",
   },
-  {
-    img: man1,
-    name: "Rev. George Agbike",
-    position: "Set Man, Remnant Christian Network",
-  },
+
   {
     img: woman,
     name: "A a b",
+    position: "Set Man, Remnant Christian Network",
+  },
+  {
+    img: man1,
+    name: "Rev. George Agbike",
     position: "Set Man, Remnant Christian Network",
   },
   {

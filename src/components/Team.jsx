@@ -1,9 +1,21 @@
-import { motion } from "framer-motion";
+import { useState, useEffect } from "react";
+import { motion, AnimatePresence } from "framer-motion";
 import { Link } from "react-router-dom";
 import setman from "../assets/setman-2.webp";
 import setman2 from "../assets/AAO.jpg";
+import setman3 from "../assets/pke.jpeg";
+
+const leaderImages = [setman, setman2, setman3];
 
 const Team = () => {
+  const [currentImg, setCurrentImg] = useState(0);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentImg((prev) => (prev + 1) % leaderImages.length);
+    }, 3000); // change every 3 seconds
+    return () => clearInterval(interval);
+  }, []);
   return (
     <section className="px-0 py-5 pb-10 bg-primary/30">
       <div className="px-5 md:px-10 max-w-7xl mx-auto">
@@ -59,11 +71,20 @@ const Team = () => {
             transition={{ duration: 0.7, delay: 0.15 }}
             className="bg-primary px-12 py-8 rounded-2xl text-white flex flex-col justify-end"
           >
-            <img
-              src={setman}
-              alt="resident pastor"
-              className="h-50 w-50 m-auto rounded-2xl mb-2"
-            />
+            <div className="h-50 w-50 m-auto relative mb-2">
+              <AnimatePresence mode="wait">
+                <motion.img
+                  key={currentImg}
+                  src={leaderImages[currentImg]}
+                  alt="resident pastor"
+                  initial={{ opacity: 0 }}
+                  animate={{ opacity: 1 }}
+                  exit={{ opacity: 0 }}
+                  transition={{ duration: 0.6 }}
+                  className="h-50 w-50 rounded-2xl object-cover absolute top-0 left-0"
+                />
+              </AnimatePresence>
+            </div>
             <h3 className="font-headline-md text-headline-md mb-4">
               Manchester Leadership Team
             </h3>
