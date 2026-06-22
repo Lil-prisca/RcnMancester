@@ -28,17 +28,12 @@ const TeamsPage = () => {
     <>
       <Navbar />
       <div className="w-full max-w-400 m-auto mt-3 mb-10">
-        <h1 className="text-center text-primary text-[30px]  ">
-          Manchester Team
-        </h1>
-        <div class="w-60 h-1 bg-secondary mb-5  m-auto"></div>
-        <p className="text-center  text-primary text-10  mb-10">
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatum,
-          ipsa!
-        </p>
+        <h1 className="text-center text-primary text-[30px] ">Leadership</h1>
+        <div class="w-40 h-1 bg-secondary mb-5  m-auto"></div>
+
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-15 max-w-7xl m-auto px-10">
           {TeamMember.map((member) => (
-            <div className="  rounded-2xl  w-92 h-100" key={member.name}>
+            <div className="  rounded-2xl w-80 md:w-92 h-100" key={member.name}>
               <img
                 src={member.img}
                 alt={member.name}

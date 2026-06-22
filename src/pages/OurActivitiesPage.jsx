@@ -11,9 +11,8 @@ const OurActivitiesPage = () => {
       <Navbar />
       <div className="w-100% max-w-400 m-auto">
         <ActivityHero />
-        <ActivityExplained />
         <Activity />
-
+        <ActivityExplained />
         <Gallery />
       </div>
       <Footer />

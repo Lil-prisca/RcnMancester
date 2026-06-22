@@ -2,13 +2,12 @@ import { motion } from "framer-motion";
 import altarpray from "../assets/Aactivities/img4.jpeg";
 
 const ActivityExplained = ({
-  label = "OUR ACTIVITIES",
   title = "Altar of Prayer",
   description = "A sacred space dedicated to intense intercession and seeking the presence of God. Join us as we cultivate a lifestyle of prayer that transforms hearts and communities.",
   image = altarpray,
 }) => {
   return (
-    <section className="relative py-16 overflow-hidden">
+    <section className="bg-primary text-on-primary relative py-16 overflow-hidden">
       <div className=" max-w-7xl container mx-auto px-8">
         <div className="flex flex-col md:flex-row md:justify-between items-center gap-12">
           {/* Text */}
@@ -19,13 +18,10 @@ const ActivityExplained = ({
             transition={{ duration: 0.7 }}
             className="flex-1 max-w-xl"
           >
-            <span className="inline-block text-tertiary font-label text-sm tracking-[0.2em] mb-4 font-bold uppercase">
-              {label}
-            </span>
             <h3 className="text-4xl md:text-5xl font-headline font-bold leading-tight mb-6">
               {title}
             </h3>
-            <p className="text-on-surface-variant text-lg leading-relaxed">
+            <p className="text-on-primary text-lg leading-relaxed">
               {description}
             </p>
           </motion.div>
