@@ -30,9 +30,9 @@ const ContactHero = () => {
             transition={{ duration: 0.9, delay: 0.5, ease: [0.22, 1, 0.36, 1] }}
             className="mb-1 leading-tight text-on-primary text-5xl md:text-7xl font-extrabold tracking-[-0.04em]"
           >
-            Find Us. <br /> <span>Connect With Us.</span>
-            <br className="" />
-            <span className="text-secondary">Grow With Us.</span>
+            GET IN TOUCH <br /> <span>We're Here to Help.</span>
+            <br /> Let's Connect. <br />
+            <span className="text-secondary">Reach Out Anytime</span>
           </motion.h1>
 
           <motion.p
@@ -41,8 +41,10 @@ const ContactHero = () => {
             transition={{ duration: 0.7, delay: 0.8 }}
             className="text-[18px] text-on-primary max-w-2xl leading-relaxed"
           >
-            Whether you're visiting for the first time, seeking prayer, or
-            looking for a church family, we'd love to hear from you.
+            Whether you have a question, need prayer, want more information
+            about our church, or would like to speak with a member of our team,
+            we'd love to hear from you. Contact us through any of the channels
+            below, and we'll get back to you as soon as possible.
           </motion.p>
         </div>
         <motion.div
