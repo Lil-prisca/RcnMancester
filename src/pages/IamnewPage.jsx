@@ -4,14 +4,7 @@ import { Link } from "react-router-dom";
 // import { supabase } from "../supabase";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
-import {
-  FaCross,
-  FaUsers,
-  FaShirt,
-  FaCarSide,
-  FaClock,
-  FaHeart,
-} from "react-icons/fa6";
+import { FaCross, FaUsers, FaShirt, FaClock, FaHeart } from "react-icons/fa6";
 
 const faqs = [
   {

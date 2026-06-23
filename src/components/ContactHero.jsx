@@ -1,5 +1,5 @@
 import map from "../assets/ContactHeroImage.png";
-import people from "../assets/Womansingingworship.jpeg";
+import people from "../assets/children.jpg";
 import { motion } from "framer-motion";
 
 const ContactHero = () => {

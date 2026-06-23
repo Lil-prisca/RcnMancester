@@ -1,4 +1,9 @@
-import { FaFacebookF, FaInstagram, FaYoutube } from "react-icons/fa";
+import {
+  FaFacebookF,
+  FaInstagram,
+  FaYoutube,
+  FaWhatsapp,
+} from "react-icons/fa";
 const ContactInfo = () => {
   return (
     <section className="py-24 max-w-7xl mx-auto px-8">
@@ -10,18 +15,19 @@ const ContactInfo = () => {
             Have questions? We'd love to hear from you. Send us a message and
             our team will get back to you within 24 hours.
           </p>
-          <form className="space-y-6">
+          <form className="  bg-black/20 p-5 px-6  rounded-2xl space-y-6">
+            <div className="space-y-2">
+              <label className="text-sm font-semibold text-on-surface-variant">
+                FULL NAME
+              </label>
+              <input
+                className="w-full bg-surface-container border-none rounded-lg p-4 focus:ring-2 focus:ring-primary"
+                placeholder="John Doe"
+                type="text"
+              />
+            </div>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-              <div className="space-y-2">
-                <label className="text-sm font-semibold text-on-surface-variant">
-                  FULL NAME
-                </label>
-                <input
-                  className="w-full bg-surface-container border-none rounded-lg p-4 focus:ring-2 focus:ring-primary"
-                  placeholder="John Doe"
-                  type="text"
-                />
-              </div>
+              {/* email */}
               <div className="space-y-2">
                 <label className="text-sm font-semibold text-on-surface-variant">
                   EMAIL ADDRESS
@@ -32,12 +38,41 @@ const ContactInfo = () => {
                   type="email"
                 />
               </div>
+              {/* watapp */}
+              <div>
+                <label className="text-sm font-semibold text-on-surface-variant">
+                  Phone Number(WhatsApp Preferred)
+                </label>
+                <input
+                  type="tel"
+                  placeholder="+44 7000 000000"
+                  className="w-full bg-surface-container border-none rounded-lg p-4 focus:ring-2 focus:ring-primary"
+                />
+              </div>
+            </div>
+            {/* contact-permission */}
+            <div>
+              <label className="text-black/60 text-xs font-medium mb-2 block">
+                Would you like us to contact you?
+              </label>
+
+              <div className="flex items-center gap-6">
+                <label className="flex items-center gap-2 text-black">
+                  <input type="radio" name="contactConsent" value="yes" />
+                  Yes
+                </label>
+
+                <label className="flex items-center gap-2 text-black">
+                  <input type="radio" name="contactConsent" value="no" />
+                  No
+                </label>
+              </div>
             </div>
             <div className="space-y-2">
               <label className="text-sm font-semibold text-on-surface-variant">
                 SUBJECT
               </label>
-              <select className="w-full bg-surface-container border-none rounded-lg p-4 focus:ring-2 focus:ring-primary">
+              <select className="w-full bg-surface-container border-none rounded-lg p-4 pr-2 focus:ring-2 focus:ring-primary">
                 <option>General Inquiry</option>
                 <option>Prayer Request</option>
                 <option>Volunteer Opportunities</option>
@@ -54,6 +89,18 @@ const ContactInfo = () => {
                 rows="5"
               ></textarea>
             </div>
+            <div>
+              <label className="flex items-start gap-3 text-black/60 text-xs">
+                <input type="checkbox" className="mt-1" />
+
+                <span>
+                  I agree to my data being processed in line with GDPR. We
+                  respect your privacy and will only use this information for
+                  RCN Cumbria updates.
+                </span>
+              </label>
+            </div>
+
             <button className="bg-primary text-white px-10 py-4 rounded-xl font-bold hover:opacity-90 transition-all">
               Send Message
             </button>
@@ -77,7 +124,7 @@ const ContactInfo = () => {
               </div> */}
             </div>
             {/* <!-- Decorative Map Background --> */}
-            <div className="absolute inset-0 opacity-10 pointer-events-none grayscale">
+            <div className="absolute inset-0 opacity-50 pointer-events-none grayscale">
               <img
                 alt="Map location"
                 className="w-full h-full object-cover"
@@ -93,7 +140,7 @@ const ContactInfo = () => {
             <div className="space-y-6">
               <a
                 className="flex items-center gap-4 hover:opacity-70 transition-opacity"
-                href="#"
+                href="https://www.youtube.com/@RCNManchester"
               >
                 <div className="w-12 h-12 rounded-full bg-white/10 flex items-center justify-center">
                   <span className="">
@@ -104,7 +151,7 @@ const ContactInfo = () => {
               </a>
               <a
                 className="flex items-center gap-4 hover:opacity-70 transition-opacity"
-                href="#"
+                href="https://www.instagram.com/rcnmanchester"
               >
                 <div className="w-12 h-12 rounded-full bg-white/10 flex items-center justify-center">
                   <span className="">
@@ -115,7 +162,7 @@ const ContactInfo = () => {
               </a>
               <a
                 className="flex items-center gap-4 hover:opacity-70 transition-opacity"
-                href="#"
+                href="https://www.facebook.com/profile.php?id=61559539801601"
               >
                 <div className="w-12 h-12 rounded-full bg-white/10 flex items-center justify-center">
                   <span className="">
@@ -123,6 +170,17 @@ const ContactInfo = () => {
                   </span>
                 </div>
                 <span className="font-bold">Facebook — Community Updates</span>
+              </a>
+              <a
+                className="flex items-center gap-4 hover:opacity-70 transition-opacity"
+                href="https://chat.whatsapp.com/DQ1vPaiDpk7IOhZubaaw1q"
+              >
+                <div className="w-12 h-12 rounded-full bg-white/10 flex items-center justify-center">
+                  <span className="">
+                    <FaWhatsapp />
+                  </span>
+                </div>
+                <span className="font-bold">WhatsApp — Daily Updates</span>
               </a>
             </div>
           </div>
