@@ -71,7 +71,7 @@ const Navbar = () => {
         </div>
 
         {menuOpen && (
-          <div className="fixed inset-x-0 top-15 z-40 glass-layer  p-6 md:hidden">
+          <div className="fixed inset-x-0 top-20 z-40 glass-layer  p-6 md:hidden">
             <div className="  flex flex-col gap-4">
               {navLinks.map((link) => (
                 <NavLink
@@ -87,6 +87,12 @@ const Navbar = () => {
                   {link.label}
                 </NavLink>
               ))}
+              <Link
+                to="/give"
+                className="bg-[#BF5A16] px-5 font-bold text-center py-2 rounded-lg text-white"
+              >
+                Give
+              </Link>
             </div>
           </div>
         )}

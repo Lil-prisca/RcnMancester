@@ -3,9 +3,10 @@ import { motion, AnimatePresence } from "framer-motion";
 import { Link } from "react-router-dom";
 import setman from "../assets/setman-2.webp";
 import setman2 from "../assets/AAO.jpg";
-import setman3 from "../assets/pke.jpeg";
+import man1 from "../assets/Rev. George Agbike.jpeg";
+import woman from "../assets/aab.png";
 
-const leaderImages = [setman, setman2, setman3];
+const leaderImages = [setman2, woman, man1];
 
 const Team = () => {
   const [currentImg, setCurrentImg] = useState(0);
@@ -93,7 +94,7 @@ const Team = () => {
               focused on administration, youth, and community outreach.
             </p>
             <Link to="/team-members">
-              <button className="border border-white/30 px-6 py-3 rounded-full font-label-sm text-label-sm hover:bg-white hover:text-primary transition-all">
+              <button className="border border-white/30 px-6 py-3 rounded-2xl font-label-sm text-label-sm hover:bg-white hover:text-primary transition-all">
                 View Full Team
               </button>
             </Link>

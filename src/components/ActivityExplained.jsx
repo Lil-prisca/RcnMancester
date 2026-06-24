@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import altarpray from "../assets/Aactivities/img4.jpeg";
+import altarpray from "../assets/cross.jpg";
 
 const ActivityExplained = ({
   title = "Altar of Prayer",
@@ -8,7 +8,7 @@ const ActivityExplained = ({
   image = altarpray,
 }) => {
   return (
-    <section className="h-[419px] w-full relative flex items-center justify-center text-center">
+    <section className="h-[419px] overflow-hidden w-full relative flex items-center justify-center text-center">
       <div className="absolute inset-0">
         <img
           className="w-full h-full object-cover"

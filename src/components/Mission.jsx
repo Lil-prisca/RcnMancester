@@ -17,7 +17,7 @@ const Mission = () => {
           >
             <div className="absolute -inset-4 bg-secondary/20 rounded-3xl blur-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
             <img
-              className="w-full h-[400px] object-top object-cover rounded-3xl relative z-10 grayscale hover:grayscale-0 transition-all duration-700"
+              className="w-full h-[400px] object-top object-cover rounded-3xl relative z-10  grayscale-0 transition-all duration-700"
               alt="spiritual depth and the quiet intensity of an apostolic mission."
               src={missionimg}
             />

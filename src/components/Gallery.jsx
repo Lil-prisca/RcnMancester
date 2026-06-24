@@ -16,6 +16,8 @@ import img14 from "../assets/Aactivities/img14.jpeg";
 
 const Images = [
   { id: 1, img: img1 },
+  { id: 2, img: img2 },
+  { id: 3, img: img3 },
   { id: 4, img: img4 },
   { id: 5, img: img5 },
   { id: 6, img: img6 },
@@ -34,16 +36,20 @@ const Images = [
 
 const Gallery = () => {
   return (
-    <div className="mt-10">
+    <div className="mt-10 flex flex-col items-center">
       <h2 className="items-center text-center font-bold text-2xl">Gallery</h2>
-      <div className=" my-5 w-5xl bg-red-300 justify-center items-center px-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+      <div className=" my-5 lg:w-5xl  justify-center items-center px-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
         {Images.map((value) => (
           <motion.div
+            initial={{ opacity: 0, x: 30 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: false }}
+            transition={{ duration: 0.7, delay: 0.15 }}
             key={value.id}
-            className="bg-amber-500 w-[350px] mx-auto rounded-lg overflow-hidden"
+            className=" w-70 md:w-70 mx-auto rounded-lg overflow-hidden"
           >
             <img
-              className="w-full h-[300px] object-cover"
+              className="w-270 md:w-70 h-70 object-cover"
               src={value.img}
               alt=""
             />
@@ -51,26 +57,6 @@ const Gallery = () => {
         ))}
       </div>
     </div>
-    // <div className="overflow-hidden w-full group">
-    //   <div className="flex w-max animate-scroll group-hover:[animation-play-state:paused]">
-    //     {loopedImages.map((value, i) => (
-    //       <motion.div
-    //         key={`${value.id}-${i}`}
-    //         initial={{ opacity: 0, y: 30 }}
-    //         whileInView={{ opacity: 1, y: 0 }}
-    //         viewport={{ once: true }}
-    //         transition={{ delay: (i % Images.length) * 0.1, duration: 0.6 }}
-    //         className="h-50 w-auto flex shrink-0 px-1 py-5 mx-1  rounded-2xl"
-    //       >
-    //         <img
-    //           src={value.img}
-    //           alt={`Gallery image ${value.id}`}
-    //           className="h-full w-auto object-cover rounded-2xl"
-    //         />
-    //       </motion.div>
-    //     ))}
-    //   </div>
-    // </div>
   );
 };
 

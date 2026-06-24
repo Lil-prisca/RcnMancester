@@ -52,7 +52,7 @@ const GiveSection = () => {
           {/* <!-- Donation Card --> */}
           <div class="bg-surface-container-lowest p-2 md:p-5 rounded-3xl border border-outline-variant/20 shadow-2xl shadow-navy/5">
             <h3 class="text-2xl font-bold mb-2 text-navy">
-              Choose Your What you are Giving to
+              What are you Giving to
             </h3>
             <div className="flex flex-col justify-center">
               {/* group */}

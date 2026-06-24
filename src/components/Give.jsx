@@ -11,9 +11,6 @@ const Give = () => {
           />
         </div>
         <div className="relative z-10 max-w-2xl">
-          <span className="inline-block px-4 py-1 rounded-full bg-secondary text-white text-xs font-bold tracking-widest uppercase mb-6 font-label">
-            PARTNER WITH US
-          </span>
           <h1 className="text-5xl md:text-7xl font-extrabold tracking-tight mb-8 leading-tight">
             Impact Lives. <br />
             <span className="text-secondary">Transform Communities.</span>

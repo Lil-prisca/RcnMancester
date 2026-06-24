@@ -64,18 +64,20 @@ const LiveSection = () => {
               Sunday at 10:30 AM and 6:30 PM. High-definition presence, wherever
               you are.
             </p>
-            <motion.button
-              whileHover={{ scale: 1.03 }}
-              whileTap={{ scale: 0.97 }}
-              className="flex items-center space-x-4 bg-surface-bright border-2 border-primary px-8 py-4 rounded-lg hover:bg-primary hover:text-on-primary transition-all duration-300 group"
-            >
-              <span className="text-3xl">
-                <FaCirclePlay />
-              </span>
-              <span className="font-bold tracking-widest uppercase text-sm">
-                Enter the Stream
-              </span>
-            </motion.button>
+            <a href="https://www.youtube.com/@RCNManchester">
+              <motion.button
+                whileHover={{ scale: 1.03 }}
+                whileTap={{ scale: 0.97 }}
+                className="flex items-center space-x-4 bg-surface-bright border-2 border-primary px-8 py-4 rounded-lg hover:bg-primary hover:text-on-primary transition-all duration-300 group"
+              >
+                <span className="text-3xl">
+                  <FaCirclePlay />
+                </span>
+                <span className="font-bold tracking-widest uppercase text-sm">
+                  Enter the Stream
+                </span>
+              </motion.button>
+            </a>
           </motion.div>
 
           <motion.div

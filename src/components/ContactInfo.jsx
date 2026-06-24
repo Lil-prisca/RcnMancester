@@ -101,7 +101,7 @@ const ContactInfo = () => {
               </label>
             </div>
 
-            <button className="bg-primary text-white px-10 py-4 rounded-xl font-bold hover:opacity-90 transition-all">
+            <button className="bg-primary text-white hover:bg-on-primary hover:text-primary px-10 py-4 rounded-xl font-bold hover:opacity-90 transition-all">
               Send Message
             </button>
           </form>

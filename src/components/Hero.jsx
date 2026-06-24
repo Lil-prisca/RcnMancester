@@ -50,9 +50,9 @@ const Hero = () => {
             transition={{ duration: 0.6, delay: 1.0 }}
             className="flex flex-col sm:flex-row gap-4"
           >
-            <Link to="/">
+            <Link to="/about-us">
               <button className="bg-secondary hover:bg-secondary/90 text-white px-10 py-4 rounded-lg font-bold text-lg transition-all active:scale-95">
-                Our Activities
+                About Us
               </button>
             </Link>
             <Link to="/iamnew">

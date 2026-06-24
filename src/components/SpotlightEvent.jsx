@@ -1,4 +1,5 @@
 import worship from "../assets/Worship.mp4";
+import { Link } from "react-router-dom";
 const SpotlightEvent = () => {
   return (
     <section class="py-12 px-6 md:px-12">
@@ -22,27 +23,17 @@ const SpotlightEvent = () => {
               Watchmen &amp; <br />
               <span class="italic text-on-primary-container">Gatekeepers</span>
             </h3>
-            <p class="text-white/70 text-lg font-body max-w-md leading-relaxed">
+          </div>
+          <div class="bg-white/10 backdrop-blur-md p-10 rounded-2xl border border-white/10 text-white w-full md:w-auto">
+            <p class="text-white/70 text-lg font-body max-w-md mb-5 leading-relaxed">
               Join us for a transformative encounter as we explore the spiritual
               protocols of vigilance and authority in the kingdom.
             </p>
-          </div>
-          <div class="bg-white/10 backdrop-blur-md p-10 rounded-2xl border border-white/10 text-white w-full md:w-auto">
-            <div class="mb-6">
-              <span class="block text-xs uppercase tracking-widest text-white/50 mb-1">
-                Date
-              </span>
-              <span class="text-2xl font-serif">October 24—27, 2024</span>
-            </div>
-            <div class="mb-10">
-              <span class="block text-xs uppercase tracking-widest text-white/50 mb-1">
-                Location
-              </span>
-              <span class="text-2xl font-serif">Cumbria Sanctuary Hall</span>
-            </div>
-            <button class="w-full bg-white text-primary py-4 rounded-xl font-label text-sm uppercase tracking-widest hover:bg-tertiary hover:text-white transition-all">
-              See More Details
-            </button>
+            <Link to="/our-activities">
+              <button class="w-full bg-white text-primary py-4 rounded-xl font-label text-sm uppercase tracking-widest hover:bg-tertiary hover:text-white transition-all">
+                See Activitty Page
+              </button>
+            </Link>
           </div>
         </div>
       </div>
