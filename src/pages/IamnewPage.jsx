@@ -1,6 +1,8 @@
 import { motion } from "framer-motion";
 import { useState } from "react";
 import { Link } from "react-router-dom";
+import neww from "../assets/welcomehere.jpg";
+// import people from "../assets/calling.jpg";
 // import { supabase } from "../supabase";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
@@ -86,7 +88,7 @@ const IAmNewPage = () => {
           <img
             className="w-full h-full object-cover opacity-30"
             alt="Welcoming church gathering"
-            src="https://images.unsplash.com/photo-1438032005730-c779502df39b?w=1920&q=85"
+            src={neww}
           />
           <div className="absolute inset-0 bg-gradient-to-t from-[#19143E] via-[#19143E]/70 to-[#19143E]/40" />
         </div>

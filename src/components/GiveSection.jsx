@@ -50,64 +50,88 @@ const GiveSection = () => {
             </div>
           </div>
           {/* <!-- Donation Card --> */}
-          <div class="bg-surface-container-lowest p-8 md:p-12 rounded-3xl border border-outline-variant/20 shadow-2xl shadow-navy/5">
-            <h3 class="text-2xl font-bold mb-8 text-navy">
+          <div class="bg-surface-container-lowest p-2 md:p-5 rounded-3xl border border-outline-variant/20 shadow-2xl shadow-navy/5">
+            <h3 class="text-2xl font-bold mb-2 text-navy">
               Choose Your What you are Giving to
             </h3>
-            {/* <div class="mb-8">
-              <label class="block text-sm font-semibold mb-2 text-on-surface-variant">
-                Custom Amount (£)
-              </label>
-              <input
-                class="w-full bg-surface-container border-none rounded-lg p-4 focus:ring-2 focus:ring-secondary text-lg"
-                placeholder="Enter amount"
-                type="number"
-              />
-            </div> */}
-            <div class="space-y-4 mb-8">
-              <div class="flex items-center gap-3">
-                <input
-                  class="text-secondary focus:ring-secondary"
-                  id="tithe"
-                  name="type"
-                  type="radio"
-                />
-                <label class="font-medium text-on-surface" for="tithe">
-                  Tithe &amp; Offering
-                </label>
+            <div className="flex flex-col justify-center">
+              {/* group */}
+              <div class="flex justify-between p-5 max-w-2xl mb-5">
+                <div class="flex items-center gap-3">
+                  <label class="font-medium text-on-surface" for="tithe">
+                    {" "}
+                    Tithe &amp; Offering{" "}
+                  </label>
+                </div>
+                <div class="flex items-center gap-3">
+                  <label class="font-medium text-on-surface" for="mission">
+                    {" "}
+                    Global Missions{" "}
+                  </label>
+                </div>
+                <div class="flex items-center gap-3">
+                  {" "}
+                  <label class="font-medium text-on-surface" for="building">
+                    {" "}
+                    Building Fund{" "}
+                  </label>
+                </div>
               </div>
-              <div class="flex items-center gap-3">
-                <input
-                  class="text-secondary focus:ring-secondary"
-                  id="mission"
-                  name="type"
-                  type="radio"
-                />
-                <label class="font-medium text-on-surface" for="mission">
-                  Global Missions
-                </label>
-              </div>
-              <div class="flex items-center gap-3">
-                <input
-                  class="text-secondary focus:ring-secondary"
-                  id="building"
-                  name="type"
-                  type="radio"
-                />
-                <label class="font-medium text-on-surface" for="building">
-                  Building Fund
-                </label>
+              <div className="w-full max-w-2xl bg-[#0b0b12] rounded-2xl p-5 text-white shadow-lg">
+                {/* Account */}
+                <div className="space-y-8">
+                  {/* Account Number */}
+                  <div className="flex justify-between items-center">
+                    <span className="text-gray-400 text-2xl font-medium">
+                      Account number
+                    </span>
+                    <div className="flex items-center gap-3">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        className="w-6 h-6 text-blue-500"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke="currentColor"
+                      >
+                        <path
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                          strokeWidth={2}
+                          d="M15.232 5.232l3.536 3.536M9 11l6.768-6.768a2.5 2.5 0 113.536 3.536L12.536 14.536A4 4 0 019.707 15.707L8 16l.293-1.707A4 4 0 019 11z"
+                        />
+                      </svg>
+                      <span className="text-blue-500 text-2xl font-semibold">
+                        13828492
+                      </span>
+                    </div>
+                  </div>
+
+                  {/* Sort Code */}
+                  <div className="flex justify-between items-center">
+                    <span className="text-gray-400 text-2xl font-medium">
+                      Sort code
+                    </span>
+                    <span className="text-2xl font-medium">20-51-08</span>
+                  </div>
+
+                  {/* Country */}
+                  <div className="flex justify-between items-center">
+                    <span className="text-gray-400 text-2xl font-medium">
+                      Country or region
+                    </span>
+                    <span className="text-2xl font-medium">United Kingdom</span>
+                  </div>
+
+                  {/* Currency */}
+                  <div className="flex justify-between items-center">
+                    <span className="text-gray-400 text-2xl font-medium">
+                      Currency
+                    </span>
+                    <span className="text-2xl font-medium">GBP</span>
+                  </div>
+                </div>
               </div>
             </div>
-            <button class="w-full bg-primary text-white py-5 rounded-xl font-bold text-lg hover:opacity-90 transition-all flex items-center justify-center gap-2">
-              Give Now{" "}
-              <span class="material-symbols-outlined">
-                <FaArrowRight />
-              </span>
-            </button>
-            {/* <p class="text-center mt-6 text-xs text-outline font-medium tracking-wide">
-              SECURE SSL ENCRYPTED TRANSACTION
-            </p> */}
           </div>
         </div>
       </div>

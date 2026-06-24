@@ -1,5 +1,5 @@
-import map from "../assets/ContactHeroImage.png";
-import people from "../assets/children.jpg";
+import map from "../assets/curchmembers.jpg";
+import people from "../assets/calling.jpg";
 import { motion } from "framer-motion";
 
 const ContactHero = () => {
@@ -52,9 +52,9 @@ const ContactHero = () => {
           whileInView={{ opacity: 1, x: 0 }}
           viewport={{ once: false }}
           transition={{ duration: 0.7, delay: 0.15 }}
-          className=" hidden md:flex relative z-10   top-20 left-20 w-80 h-100"
+          className=" hidden md:flex relative z-10   top-20 left-20 w-100 h-100"
         >
-          <img src={people} alt="" className="rounded-2xl" />
+          <img src={people} alt="" className="rounded-2xl cover" />
         </motion.div>
       </div>
     </section>
