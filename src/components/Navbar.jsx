@@ -13,8 +13,8 @@ const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
 
   return (
-    <div className="bg-[#e6e3e3]">
-      <div className=" w-[100%] max-w-500 mx-auto px-6 lg:px-10 flex items-center justify-between h-20 ">
+    <div className=" fixed top-0 left-0 right-0 z-50 bg-[#e6e3e3]">
+      <div className="  w-[100%] max-w-500 mx-auto px-6 lg:px-10 flex items-center justify-between h-20 ">
         {/* Logo */}
         <Link to="/" className="flex gap-2 items-center ">
           <div className=" w-5 h-12">
@@ -42,7 +42,7 @@ const Navbar = () => {
           ))}
           <Link
             to="/give"
-            className="bg-[#BF5A16] px-5 font-bold py-2 rounded-lg text-white"
+            className="bg-[#BF5A16] px-5 font-bold py-2 rounded-lg text-white hover:bg-primary"
           >
             Give
           </Link>

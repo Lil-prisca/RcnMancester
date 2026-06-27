@@ -4,7 +4,7 @@ import people from "../assets/Womansingingworship.jpeg";
 
 const ActivityHero = () => {
   return (
-    <section className="relative min-h-150 md:min-h-100 flex items-center overflow-hidden">
+    <section className="relative min-h-150 md:min-h-100 py-10 flex items-center overflow-hidden">
       <div className="absolute inset-0 z-0">
         <img
           className="w-full h-full object-cover opacity-40 grayscale hover:grayscale-0 transition-all duration-1000"
@@ -13,7 +13,7 @@ const ActivityHero = () => {
         />
         <div className="absolute  inset-0 bg-primary/80 "></div>
       </div>
-      <div className="flex">
+      <div className="flex pt-10">
         <div className="   relative z-10 text-left px-[20px] md:px-[80px] md:py-20 max-w-4xl">
           <motion.span
             initial={{ opacity: 0, x: -20 }}

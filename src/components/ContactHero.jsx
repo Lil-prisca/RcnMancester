@@ -13,7 +13,7 @@ const ContactHero = () => {
         />
         <div className="absolute  inset-0 bg-primary/80 "></div>
       </div>
-      <div className="flex">
+      <div className="flex pt-10">
         <div className="   relative z-10 text-left px-[20px] md:px-[80px] md:py-20 max-w-4xl">
           <motion.span
             initial={{ opacity: 0, x: -20 }}
@@ -52,7 +52,7 @@ const ContactHero = () => {
           whileInView={{ opacity: 1, x: 0 }}
           viewport={{ once: false }}
           transition={{ duration: 0.7, delay: 0.15 }}
-          className=" hidden md:flex relative z-10   top-20 left-20 w-100 h-100"
+          className=" hidden md:flex relative z-10   top-30 left-20 w-100 h-100"
         >
           <img src={people} alt="" className="rounded-2xl cover" />
         </motion.div>
