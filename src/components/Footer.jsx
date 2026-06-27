@@ -8,10 +8,10 @@ import {
 
 import { Link } from "react-router-dom";
 const Navigations = [
-  { label: "Sermons ", to: "/" },
-  { label: "Events ", to: "/" },
-  { label: "Locations ", to: "/" },
-  { label: "Give ", to: "/" },
+  { label: "Our Activities", to: "/our-activities" },
+  { label: "About", to: "/about" },
+  { label: "Contact Us ", to: "/contact-us" },
+  { label: "Give", to: "/give" },
 ];
 
 const socials = [
@@ -42,10 +42,10 @@ const socials = [
 ];
 const Footer = () => {
   return (
-    <div className="bg-[#19143E] pt-5   ">
-      <div className=" w-[90%] max-w-400 mx-auto  text-white  flex flex-col justify-between md:flex-row  py-3 ">
+    <div className="bg-[#19143E] pt-5">
+      <div className=" w-[90%] max-w-400 mx-auto  text-white  flex flex-col  md:flex-row  py-3 ">
         {/* curc Infoo */}
-        <div className=" w-90 md:w-200  px-5">
+        <div className="  w-90 md:w-100  px-5">
           <div className="flex gap-2 items-center ">
             <div className=" w-5 h-12">
               <img src={Logo} alt="" />
@@ -87,31 +87,15 @@ const Footer = () => {
             })}
           </div>
         </div>
-        <div className="   flex flex-col gap-5 md:justify-beetwen  md:flex-row md:gap-20 lg:gap-40 px-5  py-3  lg:mr-40">
-          {/*Naviations  */}
-          <div className="flex flex-col">
-            <p className="text-[#BF5A16]">Navigations</p>
-            {Navigations.map((link) => (
-              <Link key={link.label}>{link.label}</Link>
-            ))}
-          </div>
-
-          {/* community */}
-          <div className="flex flex-col">
-            <p className="text-[#BF5A16]">Community</p>
-            {Navigations.map((link) => (
-              <Link key={link.label}>{link.label}</Link>
-            ))}
-          </div>
-
-          {/* /Contact */}
-          <div className="flex flex-col">
-            <p className="text-[#BF5A16]">Contact</p>
-            {Navigations.map((link) => (
-              <Link key={link.label}>{link.label}</Link>
-            ))}
-          </div>
+        {/* <div className="flex-col    px-5  py-3  lg:mr-40"> */}
+        {/*Naviations  */}
+        <div className=" flex ml-5 mt-8 flex-col">
+          <p className="text-[#BF5A16]">Navigations</p>
+          {Navigations.map((link) => (
+            <Link key={link.label}>{link.label}</Link>
+          ))}
         </div>
+        {/* </div> */}
       </div>
       <div className="px-5 md:px-20 py-5 border-t border-white/5 max-w-323 m-auto  text-center  text-on-primary ">
         <div>© 2026 RCN Manchester. All rights reserved.</div>

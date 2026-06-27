@@ -1,4 +1,4 @@
-import { FaPeopleGroup, FaFileSignature, FaArrowRight } from "react-icons/fa6";
+import { FaPeopleGroup, FaFileSignature } from "react-icons/fa6";
 const GiveSection = () => {
   return (
     <section class="bg-surface-container-low py-24">
@@ -50,7 +50,7 @@ const GiveSection = () => {
             </div>
           </div>
           {/* <!-- Donation Card --> */}
-          <div class="bg-surface-container-lowest p-2 md:p-5 rounded-3xl border border-outline-variant/20 shadow-2xl shadow-navy/5">
+          <div class=" w-fit  mx-auto bg-surface-container-lowest p-2 px-5 md:p-5 rounded-3xl border border-outline-variant/20 shadow-2xl shadow-navy/5">
             <h3 class="text-2xl font-bold mb-2 text-navy">
               What are you Giving to
             </h3>
@@ -77,30 +77,16 @@ const GiveSection = () => {
                   </label>
                 </div>
               </div>
-              <div className="w-full max-w-2xl bg-[#0b0b12] rounded-2xl p-5 text-white shadow-lg">
+              <div className="w-100 mx-auto  max-w-2xl bg-black/30 rounded-2xl p-5 text-white shadow-lg">
                 {/* Account */}
-                <div className="space-y-8">
+                <div className="space-y-5">
                   {/* Account Number */}
                   <div className="flex justify-between items-center">
-                    <span className="text-gray-400 text-2xl font-medium">
+                    <span className="text-black text-[15px] underline font-medium">
                       Account number
                     </span>
                     <div className="flex items-center gap-3">
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        className="w-6 h-6 text-blue-500"
-                        fill="none"
-                        viewBox="0 0 24 24"
-                        stroke="currentColor"
-                      >
-                        <path
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
-                          strokeWidth={2}
-                          d="M15.232 5.232l3.536 3.536M9 11l6.768-6.768a2.5 2.5 0 113.536 3.536L12.536 14.536A4 4 0 019.707 15.707L8 16l.293-1.707A4 4 0 019 11z"
-                        />
-                      </svg>
-                      <span className="text-blue-500 text-2xl font-semibold">
+                      <span className="text-black  text-[15px] font-semibold">
                         13828492
                       </span>
                     </div>
@@ -108,26 +94,32 @@ const GiveSection = () => {
 
                   {/* Sort Code */}
                   <div className="flex justify-between items-center">
-                    <span className="text-gray-400 text-2xl font-medium">
+                    <span className="text-black text-[15px] underline font-medium">
                       Sort code
                     </span>
-                    <span className="text-2xl font-medium">20-51-08</span>
+                    <span className="text-black text-[15px] font-medium">
+                      20-51-08
+                    </span>
                   </div>
 
                   {/* Country */}
                   <div className="flex justify-between items-center">
-                    <span className="text-gray-400 text-2xl font-medium">
+                    <span className="text-black text-[15px] underline font-medium">
                       Country or region
                     </span>
-                    <span className="text-2xl font-medium">United Kingdom</span>
+                    <span className=" text-black text-[15px] font-medium">
+                      United Kingdom
+                    </span>
                   </div>
 
                   {/* Currency */}
                   <div className="flex justify-between items-center">
-                    <span className="text-gray-400 text-2xl font-medium">
+                    <span className="text-black text-[15px] underline font-medium">
                       Currency
                     </span>
-                    <span className="text-2xl font-medium">GBP</span>
+                    <span className=" text-black text-[15px] font-medium">
+                      GBP
+                    </span>
                   </div>
                 </div>
               </div>

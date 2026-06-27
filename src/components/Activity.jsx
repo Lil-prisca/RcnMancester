@@ -1,3 +1,5 @@
+import prayergroup from "../assets/prayergroup.jpg";
+import prayer2 from "../assets/prayer2.jpg";
 const Activity = () => {
   return (
     <section className="py-5 bg-on-primary">
@@ -12,36 +14,42 @@ const Activity = () => {
           {/* <!-- Large Featured --> */}
           <div className=" col-span md:col-span-8 group relative overflow-hidden rounded-xl bg-surface-container-low h-100 md:h-auto">
             <img
-              className="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-1000 "
+              className="absolute inset-0 w-full h-full object-top object-cover group-hover:scale-105 transition-transform duration-1000 "
               data-alt="A crowded worship hall with warm stage lights and a diverse congregation raising hands in unity during a Sunday gathering"
-              src="https://lh3.googleusercontent.com/aida-public/AB6AXuBNp5rjmvIxZ6mnPs3PDfswmfBSpem6zw0UgtSOg1R7RXuLiA0u3G5x44WbIuc8oUgtgRX4yCAMko4CrQjx_9UmtZa0LPZZOaGBdOBo_PWhnVa0IUZSvRDVAf18V-0T2ptWseJ7WnU14VrZ9t902XfBo8cIFQZ9ZoBViV_UT-Ed2SnjcDe3YV0Pl5Yz1AgbTzFogn0MEQ_I_ODnC7txEdK-8B-shLjnS_oVfvhEKPMp_8c9wqyPIJaJQnVNvodGOY3E6T2ENnDkNqY"
+              src={prayergroup}
             />
-            {/* <div className="absolute inset-0 bg-gradient-to-t from-[#0e0e13] via-transparent to-transparent"></div> */}
-            <div className="absolute bottom-1 w-[95%] m-auto glass rounded-2xl p-5">
+            <div className="absolute inset-0 bg-gradient-to-t from-[#0e0e13] via-transparent to-transparent"></div>
+            <div className="absolute bottom-1  w-[95%] ml-3 glass rounded-2xl p-5">
               <span className="font-label text-on-primary text-xs tracking-widest uppercase mb-2 block">
                 Daily @ 9:00pm
               </span>
               <h3 className="font-headline text-4xl text-white">
                 Daily Intercessory Prayer Meeting{" "}
               </h3>
-              <p className="text-on-primary mt-2 max-w-sm">
-                Join our daily intercessory prayers as we build a spiritual
-                fortress over our lives, families and territoty. <br />
-                Venue: Online (Zoom) <br />
-                ZOOM Link: https://zoom.us/s/94316097531 <br />
-                Meeting ID: 94316097531 Passcode: 349237 <br />
+              <p className="text-on-primary mt-2   md:flex   ">
+                <span>
+                  {" "}
+                  Join our daily intercessory prayers <br /> as we build a
+                  spiritual fortress over our lives, families and territoty.
+                  <br /> Venue: Online (Zoom)
+                  <br />
+                </span>
+                <span>
+                  ZOOM Link: https://zoom.us/s/94316097531 <br />
+                  Meeting ID: 94316097531 <br /> Passcode: 349237 <br />
+                </span>
               </p>
             </div>
           </div>
           {/* <!-- Vertical Small --> */}
-          <div className="md:col-span-4 group relative overflow-hidden rounded-xl bg-surface-container-low h-80 md:h-auto">
+          <div className="md:col-span-4 group relative overflow-hidden rounded-xl bg-surface-container-low h-80  md:h-auto">
             <img
               className="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-1000 "
               data-alt="Musicians and singers in a dim studio environment focused on creating atmospheric worship music"
-              src="https://lh3.googleusercontent.com/aida-public/AB6AXuAlkOrz8Xpz_vl0mIh6xA70ml7hvuqEQca5SNTgTMbUF4BwAU3x3f_w-Hf2WRiNLhf3oESvlAiqANVzxSFlkiTJKAhx4pCJgfhysPzfS5NhBtj9wo0GhBceQv2v9H8NNsY8BXdViB_g5ZPdj292PLfKq1JjBKfdx3WSLnDxovn6eERBbfedBxAdDtQUre8MlYZAMo1fkj-N5EDpYFJonNrO8dSjU-nK8u8wkjvZWGf9Zw0nMeKoVMSSY0i2Jo1bCrG856n2SmaEXoE"
+              src={prayer2}
             />
-            {/* <div className="absolute inset-0 bg-gradient-to-t from-[#0e0e13] via-transparent to-transparent"></div> */}
-            <div className="absolute bottom-1 w-[99%] glass  rounded-2xl p-5">
+            <div className="absolute inset-0 bg-gradient-to-t from-[#0e0e13] via-transparent to-transparent"></div>
+            <div className="absolute bottom-1 w-[95%] ml-3  mx-auto  glass  rounded-2xl p-5">
               <h3 className="font-headline text-3xl text-white">
                 Monthly Prayer Marathon
               </h3>

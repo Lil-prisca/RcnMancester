@@ -1,13 +1,14 @@
 import { motion } from "framer-motion";
+import about from "../assets/about-talk.jpg";
 
 const AboutHero = () => {
   return (
     <section className="relative min-h-150 md:min-h-150 flex items-center overflow-hidden">
       <div className="absolute inset-0 z-0">
         <img
-          className="w-full h-full object-cover opacity-40 grayscale hover:grayscale-0 transition-all duration-1000"
+          className="w-full h-full object-cover  object-top opacity-40 grayscale hover:grayscale-0 transition-all duration-1000"
           alt="A cinematic, low-angle photograph of Manchester's g"
-          src="https://lh3.googleusercontent.com/aida-public/AB6AXuDn2eUMHMdLxpfmrn2OQ34gGf-wr7hjinRmRSRNIVQacs2_1a8MStWIVaI22PERloTac0uQaPslYZyMzC_IV0X37w1HfQkRiEEXeNcQWpcT5q_QlUyzgWc4HPwYpkiJmcqRafSkmEZa9z-fMgOx2s0fM0jXnvK1DH5cHzbEF7SRVwCPe5aBl_eErYTiOTS31gCIiwDyrm8ZuzJ2q6tNkqhE98RNRrYT9D0NsSOmwysYPV05CVw0-J1VFad4kXo9I2YAgYoDnFXEcqo"
+          src={about}
         />
         <div className="absolute inset-0 bg-primary/80"></div>
       </div>

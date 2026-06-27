@@ -30,16 +30,16 @@ const Hero = () => {
             initial={{ y: 60, opacity: 0 }}
             animate={{ y: 0, opacity: 1 }}
             transition={{ duration: 0.9, delay: 0.5, ease: [0.22, 1, 0.36, 1] }}
-            className="text-white text-6xl md:text-8xl font-headline font-extrabold tracking-[-0.04em] leading-[0.95] mb-8"
+            className=" text-white text-6xl md:text-8xl font-headline font-extrabold tracking-[-0.04em] leading-[0.95] mb-8"
           >
-            Welcome to <span className="text-secondary">RCN</span> Manchester
+            Welcome to <span className="text-secondary ">RCN</span> Manchester
           </motion.h1>
 
           <motion.p
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.7, delay: 0.8 }}
-            className="text-white/80 text-xl md:text-2xl mx-auto  font-body max-w-xl leading-relaxed mb-5"
+            className=" text-white/80 text-xl md:text-2xl mx-auto  font-body max-w-xl leading-relaxed mb-5"
           >
             A Place of Prayer, Word, and Fellowship. Experience the
             transformative power of the Spirit in the heart of the city.
@@ -49,7 +49,7 @@ const Hero = () => {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 1.0 }}
-            className="flex flex-col sm:flex-row justify-center gap-4"
+            className=" flex flex-col sm:flex-row justify-center gap-4"
           >
             <Link to="/about-us">
               <motion.button

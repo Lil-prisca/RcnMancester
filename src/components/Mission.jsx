@@ -4,7 +4,7 @@ import { FaBullseye, FaFlag, FaBook } from "react-icons/fa6";
 
 const Mission = () => {
   return (
-    <section className="py-10 relative">
+    <section className="  py-10 relative">
       <div className="px-[20px] md:px-[80px] max-w-[1280px] mx-auto">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">
           {/* Image */}

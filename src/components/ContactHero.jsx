@@ -7,7 +7,7 @@ const ContactHero = () => {
     <section className="relative min-h-150 md:min-h-100 flex items-center overflow-hidden">
       <div className="absolute inset-0 z-0">
         <img
-          className="w-full h-full object-cover opacity-40 grayscale hover:grayscale-0 transition-all duration-1000"
+          className="w-full h-full object-cover object-top opacity-40 grayscale hover:grayscale-0 transition-all duration-1000"
           alt="A cinematic, low-angle photograph of Manchester's g"
           src={map}
         />

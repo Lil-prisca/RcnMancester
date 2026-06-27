@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Link } from "react-router-dom";
-import setman from "../assets/setman-2.webp";
+
 import setman2 from "../assets/AAO.jpg";
 import man1 from "../assets/Rev. George Agbike.jpeg";
 import woman from "../assets/aab.png";
@@ -18,7 +18,7 @@ const Team = () => {
     return () => clearInterval(interval);
   }, []);
   return (
-    <section className="px-0 py-5 pb-10 bg-primary/30">
+    <section className=" px-0 py-5 pb-10 bg-primary/30">
       <div className="px-5 md:px-10 max-w-7xl mx-auto">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -70,7 +70,7 @@ const Team = () => {
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: false }}
             transition={{ duration: 0.7, delay: 0.15 }}
-            className="bg-primary px-12 py-8 rounded-2xl text-white flex flex-col justify-end"
+            className="bg-primary w-[90%] mx-auto  px-10 py-8 rounded-2xl text-white flex flex-col justify-center md:justify-end"
           >
             <div className="h-50 w-50 m-auto relative mb-2">
               <AnimatePresence mode="wait">
