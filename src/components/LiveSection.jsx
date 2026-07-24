@@ -64,26 +64,48 @@ const LiveSection = () => {
               wherever you are.
             </p>
 
-           <div className="flex  items-center  gap-4">
-  <span className="text-sm font-semibold uppercase tracking-wider">
-    Enter the Live Stream
-  </span>
+            {/* <div className="flex  items-center  gap-4">
+              <span className="text-sm font-semibold uppercase tracking-wider">
+                Enter the Live Stream
+              </span>
 
-  <a
-    href="https://www.youtube.com/@RCNManchester"
-    target="_blank"
-    rel="noopener noreferrer"
-  >
-    <motion.button
-      whileHover={{ scale: 1.05 }}
-      whileTap={{ scale: 0.95 }}
-      className="flex items-center gap-2 rounded-lg border-2 border-primary bg-surface-bright px-5 py-2 transition-all duration-300 hover:bg-primary hover:text-on-primary"
-    >
-      <FaCirclePlay className="text-xl" />
-      <span>Watch</span>
-    </motion.button>
-  </a>
-</div>
+              <a
+                href="https://www.youtube.com/@RCNManchester"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <motion.button
+                  whileHover={{ scale: 1.05 }}
+                  whileTap={{ scale: 0.95 }}
+                  className="flex items-center gap-2 rounded-lg border-2 border-primary bg-surface-bright px-5 py-2 transition-all duration-300 hover:bg-primary hover:text-on-primary"
+                >
+                  <FaCirclePlay className="text-xl" />
+                  <span>Watch</span>
+                </motion.button>
+              </a>
+            </div> */}
+
+            <div className="flex items-center gap-3 rounded-xl border border-white/10 bg-surface/60 p-4 backdrop-blur-md">
+              <div>
+                <p className="text-xs uppercase tracking-[0.25em] text-primary">
+                  Join Us Online
+                </p>
+              </div>
+
+              <a
+                href="https://www.youtube.com/@RCNManchester"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <motion.button
+                  whileHover={{ scale: 1.05 }}
+                  whileTap={{ scale: 0.95 }}
+                  className="flex items-center gap-2 rounded-full px-5 py-3  shadow-lg border-2 border-primary   transition-all duration-300 hover:bg-primary hover:text-on-primary"
+                >
+                  <FaCirclePlay className="text-xl" />
+                </motion.button>
+              </a>
+            </div>
           </motion.div>
 
           <motion.div
