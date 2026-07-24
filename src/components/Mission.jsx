@@ -21,20 +21,6 @@ const Mission = () => {
               alt="spiritual depth and the quiet intensity of an apostolic mission."
               src={missionimg}
             />
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ delay: 0.3, duration: 0.6 }}
-              className="absolute bottom-8 left-9 z-20 glass-layer p-8 rounded-2xl max-w-[300px]"
-            >
-              <p className="text-white italic mb-2">
-                "Restoring the ancient paths for a modern generation."
-              </p>
-              <span className="text-secondary font-label-md uppercase tracking-widest">
-                Apostolic Vision
-              </span>
-            </motion.div>
           </motion.div>
 
           {/* Text content */}

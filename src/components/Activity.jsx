@@ -12,9 +12,9 @@ const Activity = () => {
           </h2>
           <div className="h-1 w-24 bg-primary"></div>
         </div>
-        <div className="grid grid-cols-1 md:grid-cols-12 gap-6 h-auto md:h-150">
+        <div className="grid grid-cols-1 md:grid-cols-8 md:py-10  lg:px-60 gap-6 h-auto md:h-220">
           {/* <!-- Large Featured --> */}
-          <div className=" col-span md:col-span-8 group relative overflow-hidden rounded-xl bg-surface-container-low h-100 md:h-auto">
+          <div className=" col-span md:col-span-4 group relative overflow-hidden rounded-xl bg-surface-container-low h-110 md:h-100">
             <img
               className="absolute inset-0 w-full h-full object-top object-cover group-hover:scale-105 transition-transform duration-1000 "
               data-alt="A crowded worship hall with warm stage lights and a diverse congregation raising hands in unity during a Sunday gathering"
@@ -43,7 +43,7 @@ const Activity = () => {
             </div>
           </div>
           {/* <!-- Vertical Small --> */}
-          <div className="md:col-span-4 group relative overflow-hidden rounded-xl bg-surface-container-low h-80  md:h-auto">
+          <div className="md:col-span-4 group relative overflow-hidden rounded-xl bg-surface-container-low h-110  md:h-100">
             <img
               className="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-1000 "
               data-alt="Musicians and singers in a dim studio environment focused on creating atmospheric worship music"
@@ -62,7 +62,7 @@ const Activity = () => {
             </div>
           </div>
           {/* <!-- Bottom Row Small 1 --> */}
-          <div className="md:col-span-4 group relative overflow-hidden rounded-xl bg-surface-container-low h-80 md:h-auto">
+          <div className="md:col-span-4 group relative overflow-hidden rounded-xl bg-surface-container-low h-110 md:h-100">
             <img
               className="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-1000 "
               data-alt="Soft candlelight in a stone chapel creating a sacred and intimate environment for prayer and reflection"
@@ -75,7 +75,7 @@ const Activity = () => {
             </div> */}
           </div>
           {/* <!-- Bottom Row Small 2 --> */}
-          <div className="md:col-span-8 group relative overflow-hidden rounded-xl bg-surface-container-low h-80 md:h-auto text-white">
+          <div className="md:col-span-4 group relative overflow-hidden rounded-xl bg-surface-container-low h-110 md:h-100 text-white">
             <img
               className="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-1000 "
               data-alt="Volunteers sharing a meal and conversation with people in a local urban setting, emphasizing outreach and community service"
