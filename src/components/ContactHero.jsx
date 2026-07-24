@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 
 const ContactHero = () => {
   return (
-    <section className="relative min-h-150 md:min-h-100 flex items-center overflow-hidden">
+    <section className="relative  md:min-h-90 flex items-center overflow-hidden">
       <div className="absolute inset-0 z-0">
         <img
           className="w-full h-full object-cover object-top opacity-40 grayscale hover:grayscale-0 transition-all duration-1000"
@@ -14,7 +14,7 @@ const ContactHero = () => {
         <div className="absolute  inset-0 bg-primary/80 "></div>
       </div>
       <div className="flex pt-10">
-        <div className=" h-[95vh] justify-content relative z-10 text-left px-[20px] md:px-[80px] md:py-40 max-w-4xl">
+        <div className=" h-fit justify-content relative z-10 text-left px-5 py-30  md:px-20 md:py-50 max-w-4xl">
           <motion.h1
             initial={{ y: 60, opacity: 0 }}
             animate={{ y: 0, opacity: 1 }}
