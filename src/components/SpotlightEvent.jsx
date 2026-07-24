@@ -19,9 +19,13 @@ const SpotlightEvent = () => {
         </div>
         <div class="relative z-10 p-12 md:p-24 w-full flex flex-col md:flex-row gap-12 justify-between items-center">
           <div class="max-w-xl">
-            <h3 class="text-5xl md:text-7xl font-serif text-white leading-none mb-8">
+            {/* <h3 class="text-5xl md:text-7xl font-serif text-white leading-none mb-8">
               Watchmen &amp; <br />
               <span class="italic text-on-primary-container">Gatekeepers</span>
+            </h3> */}
+            <h3 class="text-5xl md:text-7xl font-serif text-white leading-none mb-8">
+              Lunch Hour <br />
+              <span class="italic text-on-primary-container">Prayer</span>
             </h3>
           </div>
           <div class="bg-white/10 backdrop-blur-md p-10 rounded-2xl border border-white/10 text-white w-full md:w-auto">

@@ -22,7 +22,7 @@ const ContactInfo = () => {
               </label>
               <input
                 className="w-full bg-surface-container border-none rounded-lg p-4 focus:ring-2 focus:ring-primary"
-                placeholder="John Doe"
+                // placeholder="John Doe"
                 type="text"
               />
             </div>
@@ -34,7 +34,7 @@ const ContactInfo = () => {
                 </label>
                 <input
                   className="w-full bg-surface-container border-none rounded-lg p-4 focus:ring-2 focus:ring-primary"
-                  placeholder="john@example.com"
+                  // placeholder="john@example.com"
                   type="email"
                 />
               </div>
@@ -45,7 +45,7 @@ const ContactInfo = () => {
                 </label>
                 <input
                   type="tel"
-                  placeholder="+44 7000 000000"
+                  // placeholder="+44 7000 000000"
                   className="w-full bg-surface-container border-none rounded-lg p-4 focus:ring-2 focus:ring-primary"
                 />
               </div>
@@ -77,6 +77,7 @@ const ContactInfo = () => {
                 <option>Prayer Request</option>
                 <option>Volunteer Opportunities</option>
                 <option>Giving Support</option>
+                <option>Testimonies</option>
               </select>
             </div>
             <div className="space-y-2">
@@ -85,7 +86,6 @@ const ContactInfo = () => {
               </label>
               <textarea
                 className="w-full bg-surface-container border-none rounded-lg p-4 focus:ring-2 focus:ring-primary"
-                placeholder="How can we help you today?"
                 rows="5"
               ></textarea>
             </div>
@@ -112,11 +112,9 @@ const ContactInfo = () => {
             <div className="relative z-10">
               <h3 className="text-2xl font-bold text-navy mb-4">Location</h3>
               <p className="text-on-surface-variant mb-6">
-                Manchester City Centre,
+                St Thomas Centre,
                 <br />
-                Unit 4, Great Northern Warehouse,
-                <br />
-                Manchester M3 4EN
+                Ardwick Green North Manchester M12 6FZ
               </p>
               {/* <div className="flex items-center gap-4 text-primary font-semibold group-hover:translate-x-2 transition-transform">
                 <span className="material-symbols-outlined">directions</span>
@@ -149,17 +147,7 @@ const ContactInfo = () => {
                 </div>
                 <span className="font-bold">YouTube — Watch Live</span>
               </a>
-              <a
-                className="flex items-center gap-4 hover:opacity-70 transition-opacity"
-                href="https://www.instagram.com/rcnmanchester"
-              >
-                <div className="w-12 h-12 rounded-full bg-white/10 flex items-center justify-center">
-                  <span className="">
-                    <FaInstagram />
-                  </span>
-                </div>
-                <span className="font-bold">Instagram — Daily Inspiration</span>
-              </a>
+
               <a
                 className="flex items-center gap-4 hover:opacity-70 transition-opacity"
                 href="https://www.facebook.com/profile.php?id=61559539801601"
@@ -181,6 +169,17 @@ const ContactInfo = () => {
                   </span>
                 </div>
                 <span className="font-bold">WhatsApp — Daily Updates</span>
+              </a>
+              <a
+                className="flex items-center gap-4 hover:opacity-70 transition-opacity"
+                href="https://www.instagram.com/rcnmanchester"
+              >
+                <div className="w-12 h-12 rounded-full bg-white/10 flex items-center justify-center">
+                  <span className="">
+                    <FaInstagram />
+                  </span>
+                </div>
+                <span className="font-bold">Instagram </span>
               </a>
             </div>
           </div>

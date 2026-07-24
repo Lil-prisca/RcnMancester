@@ -15,15 +15,6 @@ const ActivityHero = () => {
       </div>
       <div className="flex pt-10">
         <div className="   relative z-10 text-left px-[20px] md:px-[80px] md:py-20 max-w-4xl">
-          <motion.span
-            initial={{ opacity: 0, x: -20 }}
-            animate={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.6, delay: 0.3 }}
-            className="inline-block text-tertiary font-label text-sm tracking-[0.2em] mb-1 font-bold uppercase"
-          >
-            COME WORSIP WITH US
-          </motion.span>
-
           <motion.h1
             initial={{ y: 60, opacity: 0 }}
             animate={{ y: 0, opacity: 1 }}

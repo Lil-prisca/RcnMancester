@@ -17,22 +17,15 @@ const Hero = () => {
 
       <div className=" text-center flex justify-center container mx-auto px-8 relative z-10  ">
         <div className="max-w-3xl">
-          <motion.span
-            initial={{ opacity: 0, x: -20 }}
-            animate={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.6, delay: 0.3 }}
-            className="inline-block text-tertiary font-label text-sm tracking-[0.2em] mb-6  font-bold uppercase"
-          >
-            THE DIVINE SANCTUARY
-          </motion.span>
-
           <motion.h1
             initial={{ y: 60, opacity: 0 }}
             animate={{ y: 0, opacity: 1 }}
             transition={{ duration: 0.9, delay: 0.5, ease: [0.22, 1, 0.36, 1] }}
-            className=" text-white text-6xl md:text-8xl font-headline font-extrabold tracking-[-0.04em] leading-[0.95] mb-8"
+            className=" text-white text-5xl md:text-8xl font-headline font-extrabold tracking-[-0.04em] leading-[0.95] mb-8"
           >
-            Welcome to <span className="text-secondary ">RCN</span> Manchester
+            Welcome to{" "}
+            <span className="text-secondary ">Remnant Christian Network</span>{" "}
+            Manchester
           </motion.h1>
 
           <motion.p

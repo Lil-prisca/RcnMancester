@@ -60,24 +60,26 @@ const LiveSection = () => {
               Join the Moment.
             </h2>
             <p className="text-on-surface-variant text-lg">
-              Can't make it to Cumbria? Engage with our live broadcast every
-              Sunday at 10:30 AM and 6:30 PM. High-definition presence, wherever
-              you are.
+              Can't make it to Manchester? Engage with our live broadcast,
+              wherever you are.
             </p>
-            <a href="https://www.youtube.com/@RCNManchester">
-              <motion.button
-                whileHover={{ scale: 1.03 }}
-                whileTap={{ scale: 0.97 }}
-                className="flex items-center space-x-4 bg-surface-bright border-2 border-primary px-8 py-4 rounded-lg hover:bg-primary hover:text-on-primary transition-all duration-300 group"
-              >
-                <span className="text-3xl">
-                  <FaCirclePlay />
-                </span>
-                <span className="font-bold tracking-widest uppercase text-sm">
-                  Enter the Stream
-                </span>
-              </motion.button>
-            </a>
+
+            <div className="flex">
+              <span className="w-fit  font-bold items-center align-center  uppercase text-sm text-center">
+                Enter the Stream
+              </span>
+              <a href="https://www.youtube.com/@RCNManchester">
+                <motion.button
+                  whileHover={{ scale: 1.03 }}
+                  whileTap={{ scale: 0.97 }}
+                  className="flex items-center m-auto space-x-4 bg-surface-bright border-2 border-primary px-3 py-2 mt-3 rounded-lg hover:bg-primary hover:text-on-primary transition-all duration-300 group"
+                >
+                  <span className="text-3xl">
+                    <FaCirclePlay />
+                  </span>
+                </motion.button>
+              </a>
+            </div>
           </motion.div>
 
           <motion.div

@@ -12,8 +12,8 @@ const Give = () => {
         </div>
         <div className="relative z-10 max-w-2xl  my-auto">
           <h1 className="text-7xl md:text-7xl font-extrabold tracking-tight mb-8 leading-tight">
-            Impact Lives. <br />
-            <span className="text-secondary">Transform Communities.</span>
+            Partner With Us <br />
+            <span className="text-secondary"></span>
           </h1>
           <p className="text-lg md:text-xl text-white/80 leading-relaxed">
             Whether you are reaching out for support or choosing to give back,

@@ -48,22 +48,21 @@ const Mission = () => {
               Our Sacred Mandate
             </h2>
             <p className="font-body-lg text-black mb-12 leading-relaxed">
-              At RCN Manchester, we are not just a church; we are a community of
-              believers dedicated to the pursuit of the authentic apostolic
-              life. We believe in the raw power of the Gospel to transform
-              lives, cities, and nations.
+              At RCN Manchester, we are a community of believers dedicated to
+              the pursuit of the authentic apostolic life. We believe in the raw
+              power of the Gospel to transform lives, cities, and nations.
             </p>
             <div className="space-y-8">
               {[
                 {
                   icon: <FaFlag />,
                   title: "Mission",
-                  desc: "To raise a generation of believers who are burning for God and established in the truth of His word.",
+                  desc: " To see Manchester and the United Kingdom transformed by the light and power of the Holy Spirit.",
                 },
                 {
                   icon: <FaBullseye />,
                   title: "Vision",
-                  desc: "To see Manchester and the United Kingdom transformed by the light and power of the Holy Spirit.",
+                  desc: "Striving towards the rebirth of Apostolic Christianity.",
                 },
                 {
                   icon: <FaBook />,

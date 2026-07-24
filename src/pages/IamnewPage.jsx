@@ -164,7 +164,7 @@ const IAmNewPage = () => {
         </section>
       </div>
       {/* Service times */}
-      <section className=" bg-black/20 py-16 relative overflow-hidden">
+      {/* <section className=" bg-black/20 py-16 relative overflow-hidden">
         <div className="  max-w-7xl mx-auto px-6 lg:px-10">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -197,7 +197,7 @@ const IAmNewPage = () => {
             </p>
           </motion.div>
         </div>
-      </section>
+      </section> */}
       <div className="bg-primary max-w-8xl">
         {/* FAQ */}
         <section className=" bg-primary  py-10 max-w-4xl mx-auto px-6 lg:px-10">
@@ -297,7 +297,7 @@ const IAmNewPage = () => {
                     onChange={(e) =>
                       setFormData({ ...formData, name: e.target.value })
                     }
-                    placeholder="e.g. John Doe"
+                    // placeholder="e.g. John Doe"
                     className="w-full bg-white/5 border border-white/10 text-white placeholder-white/30 text-sm rounded-xl px-4 py-3 outline-none focus:border-secondary transition-colors"
                   />
                 </div>
@@ -313,7 +313,7 @@ const IAmNewPage = () => {
                       onChange={(e) =>
                         setFormData({ ...formData, email: e.target.value })
                       }
-                      placeholder="you@email.com"
+                      // placeholder="you@email.com"
                       className="w-full bg-white/5 border border-white/10 text-white placeholder-white/30 text-sm rounded-xl px-4 py-3 outline-none focus:border-secondary transition-colors"
                     />
                   </div>
@@ -327,7 +327,7 @@ const IAmNewPage = () => {
                       onChange={(e) =>
                         setFormData({ ...formData, phone: e.target.value })
                       }
-                      placeholder="+44 7000 000000"
+                      // placeholder="+44 7000 000000"
                       className="w-full bg-white/5 border border-white/10 text-white placeholder-white/30 text-sm rounded-xl px-4 py-3 outline-none focus:border-secondary transition-colors"
                     />
                   </div>
@@ -374,19 +374,6 @@ const IAmNewPage = () => {
                   </div>
                 </div>
 
-                <div>
-                  <label className="text-white/60 text-xs font-medium mb-2 block">
-                    Which Sunday are you planning to visit?
-                  </label>
-                  <input
-                    type="date"
-                    value={formData.visitDate}
-                    onChange={(e) =>
-                      setFormData({ ...formData, visitDate: e.target.value })
-                    }
-                    className="w-full bg-white/5 border border-white/10 text-white text-sm rounded-xl px-4 py-3 outline-none focus:border-secondary transition-colors"
-                  />
-                </div>
                 <div>
                   <label className="text-white/60 text-xs font-medium mb-2 block">
                     Mesage to Us

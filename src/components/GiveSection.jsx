@@ -1,4 +1,4 @@
-import { FaPeopleGroup, FaFileSignature } from "react-icons/fa6";
+import { FaFileSignature } from "react-icons/fa6";
 const GiveSection = () => {
   return (
     <section class="bg-surface-container-low py-24">
@@ -15,22 +15,6 @@ const GiveSection = () => {
               and serve the Manchester community.
             </p>
             <div class="space-y-6">
-              <div class="flex gap-4 items-start group">
-                <div class="bg-primary/10 p-3 rounded-xl text-primary">
-                  <span class="material-symbols-outlined">
-                    <FaPeopleGroup />
-                  </span>
-                </div>
-                <div>
-                  <h4 class="font-bold text-navy text-xl mb-1">
-                    Secure Tithing
-                  </h4>
-                  <p class="text-on-surface-variant">
-                    Our platform uses industry-standard encryption to ensure
-                    your financial details remain confidential and protected.
-                  </p>
-                </div>
-              </div>
               <div class="flex gap-4 items-start group">
                 <div class="bg-primary/10 p-3 rounded-xl text-primary">
                   <span class="material-symbols-outlined">
@@ -66,18 +50,11 @@ const GiveSection = () => {
                 <div class="flex items-center gap-3">
                   <label class="font-medium text-on-surface" for="mission">
                     {" "}
-                    Global Missions{" "}
-                  </label>
-                </div>
-                <div class="flex items-center gap-3">
-                  {" "}
-                  <label class="font-medium text-on-surface" for="building">
-                    {" "}
-                    Building Fund{" "}
+                    Missions{" "}
                   </label>
                 </div>
               </div>
-              <div className="w-100 mx-auto  max-w-2xl bg-black/30 rounded-2xl p-5 text-white shadow-lg">
+              <div className="w-[70vw] md:w-100 mx-auto    bg-black/30 rounded-2xl p-5 text-white shadow-lg">
                 {/* Account */}
                 <div className="space-y-5">
                   {/* Account Number */}
