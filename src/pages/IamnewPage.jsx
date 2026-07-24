@@ -92,14 +92,6 @@ const IAmNewPage = () => {
         </div>
 
         <div className="relative z-10 max-w-4xl  px-6 lg:px-10 py-32 text-left">
-          <motion.span
-            initial={{ opacity: 0, y: -10 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: 0.2 }}
-            className="inline-block text-tertiary font-label text-sm tracking-[0.2em] mb-6 font-bold uppercase"
-          >
-            FIRST TIME HERE?
-          </motion.span>
           <motion.h1
             initial={{ y: 50, opacity: 0 }}
             animate={{ y: 0, opacity: 1 }}
