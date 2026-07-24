@@ -9,7 +9,7 @@ import {
 import { Link } from "react-router-dom";
 const Navigations = [
   { label: "Our Activities", to: "/our-activities" },
-  { label: "About", to: "/about" },
+  { label: "About", to: "/about-us" },
   { label: "Contact Us ", to: "/contact-us" },
   { label: "Give", to: "/give" },
 ];
@@ -92,7 +92,7 @@ const Footer = () => {
         <div className=" flex ml-5 mt-8 flex-col">
           <p className="text-[#BF5A16]">Navigations</p>
           {Navigations.map((link) => (
-            <Link key={link.label}>{link.label}</Link>
+            <Link key={link.label} to={link.to}>{link.label}</Link>
           ))}
         </div>
         {/* </div> */}

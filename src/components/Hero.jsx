@@ -21,7 +21,7 @@ const Hero = () => {
             initial={{ y: 60, opacity: 0 }}
             animate={{ y: 0, opacity: 1 }}
             transition={{ duration: 0.9, delay: 0.5, ease: [0.22, 1, 0.36, 1] }}
-            className=" text-white text-5xl md:text-8xl font-headline font-extrabold tracking-[-0.04em] leading-[0.95] mb-8"
+            className=" text-white text-5xl md:text-7xl font-headline font-extrabold tracking-[-0.04em] leading-[0.95] mb-8"
           >
             Welcome to{" "}
             <span className="text-secondary ">Remnant Christian Network</span>{" "}

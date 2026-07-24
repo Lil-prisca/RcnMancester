@@ -23,8 +23,8 @@ const SpotlightEvent = () => {
               Watchmen &amp; <br />
               <span class="italic text-on-primary-container">Gatekeepers</span>
             </h3> */}
-            <h3 class="text-5xl md:text-7xl font-serif text-white leading-none mb-8">
-              Lunch Hour <br />
+            <h3 class="text-5xl text-center md:text-7xl font-serif text-white leading-none mb-8">
+              Lunch Hour <br clasName="hidden md:flex" />
               <span class="italic text-on-primary-container">Prayer</span>
             </h3>
           </div>

@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import img16 from "../assets/Aactivities/img16.png"
 
 const MissionSection = () => {
   return (
@@ -17,7 +18,7 @@ const MissionSection = () => {
               <img
                 className="relative z-10 w-full asymmetric-border object-cover rounded-2xl h-100 shadow-2xl"
                 data-alt=" worship leader with hands raised in prayer"
-                src="https://lh3.googleusercontent.com/aida-public/AB6AXuAumipLxi9NIQPSNWJ45qlCOyOENxqwcXFZ6KQyWfQJu05xJ7hnuDeXDIIeVKNQUq486vn6wFZukj0zrbDIZZ_Bo128DwzP627ABAuZ7-gO6pFD3iJ-XpDX9Q4r2dgqCKB5fRAyhq_hUb6oaQbG9SO8h2DFYanUTJ1J8BOOx6Ymz2ZF7O6ybiGdmW-R7lYd8i6lQUHp02h74kfMqaRouU20i2KwC9NWEmU2D9LaYCDe32vkTxDFq6PhcGVLlAJbA1vc47qDsKxa3hQ"
+                src={img16}
               />
             </div>
           </motion.div>

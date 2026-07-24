@@ -54,32 +54,36 @@ const LiveSection = () => {
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: false }}
             transition={{ duration: 0.7 }}
-            className="w-full md:w-1/2 space-y-8 order-2 md:order-1"
+            className="w-full  md:w-1/2  order-2 md:order-1"
           >
-            <h2 className="font-headline text-5xl md:text-6xl text-primary">
+            <h2 className="  font-headline text-5xl md:text-6xl text-primary">
               Join the Moment.
             </h2>
-            <p className="text-on-surface-variant text-lg">
+            <p className="  text-on-surface-variant text-lg">
               Can't make it to Manchester? Engage with our live broadcast,
               wherever you are.
             </p>
 
-            <div className="flex">
-              <span className="w-fit  font-bold items-center align-center  uppercase text-sm text-center">
-                Enter the Stream
-              </span>
-              <a href="https://www.youtube.com/@RCNManchester">
-                <motion.button
-                  whileHover={{ scale: 1.03 }}
-                  whileTap={{ scale: 0.97 }}
-                  className="flex items-center m-auto space-x-4 bg-surface-bright border-2 border-primary px-3 py-2 mt-3 rounded-lg hover:bg-primary hover:text-on-primary transition-all duration-300 group"
-                >
-                  <span className="text-3xl">
-                    <FaCirclePlay />
-                  </span>
-                </motion.button>
-              </a>
-            </div>
+           <div className="flex  items-center  gap-4">
+  <span className="text-sm font-semibold uppercase tracking-wider">
+    Enter the Live Stream
+  </span>
+
+  <a
+    href="https://www.youtube.com/@RCNManchester"
+    target="_blank"
+    rel="noopener noreferrer"
+  >
+    <motion.button
+      whileHover={{ scale: 1.05 }}
+      whileTap={{ scale: 0.95 }}
+      className="flex items-center gap-2 rounded-lg border-2 border-primary bg-surface-bright px-5 py-2 transition-all duration-300 hover:bg-primary hover:text-on-primary"
+    >
+      <FaCirclePlay className="text-xl" />
+      <span>Watch</span>
+    </motion.button>
+  </a>
+</div>
           </motion.div>
 
           <motion.div
