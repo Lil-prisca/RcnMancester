@@ -2,8 +2,6 @@ import { motion } from "framer-motion";
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import neww from "../assets/welcomehere.jpg";
-// import people from "../assets/calling.jpg";
-// import { supabase } from "../supabase";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import { FaCross, FaUsers, FaShirt, FaClock, FaHeart } from "react-icons/fa6";
@@ -19,7 +17,7 @@ const faqs = [
     icon: <FaClock />,
     question: "How long is the service?",
     answer:
-      "Our Sunday services typically run for about 2 hours, including worship, the Word, and ministry time. We never want you to feel rushed in God's presence.",
+      "Depending on the service youre attending, our services run for aout 1hr and above. We never want you to feel rushed in God's presence.",
   },
   {
     icon: <FaUsers />,
