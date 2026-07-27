@@ -63,49 +63,6 @@ const LiveSection = () => {
               Can't make it to Manchester? Engage with our live broadcast,
               wherever you are.
             </p>
-
-            {/* <div className="flex  items-center  gap-4">
-              <span className="text-sm font-semibold uppercase tracking-wider">
-                Enter the Live Stream
-              </span>
-
-              <a
-                href="https://www.youtube.com/@RCNManchester"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <motion.button
-                  whileHover={{ scale: 1.05 }}
-                  whileTap={{ scale: 0.95 }}
-                  className="flex items-center gap-2 rounded-lg border-2 border-primary bg-surface-bright px-5 py-2 transition-all duration-300 hover:bg-primary hover:text-on-primary"
-                >
-                  <FaCirclePlay className="text-xl" />
-                  <span>Watch</span>
-                </motion.button>
-              </a>
-            </div> */}
-
-            <div className="flex items-center gap-3 rounded-xl border border-white/10 bg-surface/60 p-4 backdrop-blur-md">
-              <div>
-                <p className="text-xs uppercase tracking-[0.25em] text-primary">
-                  Join Us Online
-                </p>
-              </div>
-
-              <a
-                href="https://www.youtube.com/@RCNManchester"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <motion.button
-                  whileHover={{ scale: 1.05 }}
-                  whileTap={{ scale: 0.95 }}
-                  className="flex items-center gap-2 rounded-full px-5 py-3  shadow-lg border-2 border-primary   transition-all duration-300 hover:bg-primary hover:text-on-primary"
-                >
-                  <FaCirclePlay className="text-xl" />
-                </motion.button>
-              </a>
-            </div>
           </motion.div>
 
           <motion.div
@@ -126,8 +83,13 @@ const LiveSection = () => {
                 whileInView={{ opacity: 1, scale: 1 }}
                 viewport={{ once: false }}
                 transition={{ duration: 0.5, delay: 0.4 }}
-                className="absolute inset-0 flex items-center justify-center"
+                className="absolute inset-0 flex flex-col items-center justify-center gap-2"
               >
+                <div className="text-center justify-center mt-3">
+                  <p className="text-xl uppercase tracking-[0.25em] text-white mb-2">
+                    Join Us Online
+                  </p>
+                </div>
                 <motion.div
                   whileHover={{ scale: 1.1 }}
                   className="w-20 h-20 bg-white/10 backdrop-blur-md rounded-full flex items-center justify-center group cursor-pointer transition-transform"

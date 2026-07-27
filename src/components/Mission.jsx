@@ -30,52 +30,85 @@ const Mission = () => {
             viewport={{ once: true }}
             transition={{ duration: 0.7 }}
           >
-            <h2 className="font-headline-xl font-sans font-bold text-[30px] text-black mb-8 text-3xl">
+            <h2 className="font-headline-xl font-sans font-bold text-[30px] text-black mb-5 text-3xl">
               Our Sacred Mandate
             </h2>
-            <p className="font-body-lg text-black mb-12 leading-relaxed">
+            <p className="font-body-lg text-black mb-5 leading-relaxed">
               At RCN Manchester, we are a community of believers dedicated to
               the pursuit of the authentic apostolic life. We believe in the raw
               power of the Gospel to transform lives, cities, and nations.
             </p>
-            <div className="space-y-8">
+
+            <div className="space-y-12">
               {[
                 {
-                  icon: <FaFlag />,
-                  title: "Mission",
-                  desc: " To see Manchester and the United Kingdom transformed by the light and power of the Holy Spirit.",
+                  heading: "Vision Statement",
+                  items: [
+                    {
+                      icon: <FaFlag />,
+                      title: "Apostolic Rebirth",
+                      desc: " To strive towards the rebirth of early apostolic Christianity as seen in the days of the first-generation apostles of Jesus Christ.",
+                    },
+                    {
+                      icon: <FaBullseye />,
+                      title: "Kingdom Realization",
+                      desc: "To see the coming of the King and His Kingdom until His reality is furnished in the hearts of men, heralding the end-of-age return of Jesus Christ.",
+                    },
+                    {
+                      icon: <FaBook />,
+                      title: "Kingdom Pillars",
+                      desc: "To raise believers and ministers who are passionately committed to the will and work of God.",
+                    },
+                  ],
                 },
                 {
-                  icon: <FaBullseye />,
-                  title: "Vision",
-                  desc: "Striving towards the rebirth of Apostolic Christianity.",
+                  heading: "Mission Statement",
+                  items: [
+                    {
+                      icon: <FaFlag />,
+                      title: "Core Practices",
+                      desc: "To utilize prayer, the intense study of the Word, and the breaking of bread as the primary instruments for spiritual growth and community building.",
+                    },
+                    {
+                      icon: <FaBullseye />,
+                      title: "Equipping Ministers",
+                      desc: "To train and deploy effective ministers of the Gospel to advance the work of the church and preserve true biblical doctrine.",
+                    },
+                    {
+                      icon: <FaBook />,
+                      title: "Apostolic Community",
+                      desc: "To build living apostolic communities through aggressive evangelism, missions, and active fellowship.",
+                    },
+                  ],
                 },
-                {
-                  icon: <FaBook />,
-                  title: "Philosophy",
-                  desc: "Intimacy, Intercession, and the accurate teaching of the Word as the foundations of growth.",
-                },
-              ].map((item, i) => (
-                <motion.div
-                  key={item.title}
-                  initial={{ opacity: 0, y: 20 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  viewport={{ once: true }}
-                  transition={{ delay: i * 0.15, duration: 0.6 }}
-                  className="flex gap-6"
-                >
-                  <div className="shrink-0 w-12 h-12 flex items-center justify-center text-secondary border-secondary/20">
-                    {item.icon}
-                  </div>
-                  <div>
-                    <h4 className="font-headline-lg text-body-lg font-bold mb-2">
-                      {item.title}
-                    </h4>
-                    <p className="text-on-surface-variant font-sans">
-                      {item.desc}
-                    </p>
-                  </div>
-                </motion.div>
+              ].map((group) => (
+                <div key={group.heading} className="space-y-3">
+                  <h3 className="font-headline-lg text-body-xl font-bold">
+                    {group.heading}
+                  </h3>
+                  {group.items.map((item, i) => (
+                    <motion.div
+                      key={item.title}
+                      initial={{ opacity: 0, y: 20 }}
+                      whileInView={{ opacity: 1, y: 0 }}
+                      viewport={{ once: true }}
+                      transition={{ delay: i * 0.15, duration: 0.6 }}
+                      className="flex gap-3"
+                    >
+                      <div className="shrink-0 w-12 h-12 flex items-center justify-center text-secondary border-secondary/20">
+                        {item.icon}
+                      </div>
+                      <div>
+                        <h4 className="font-headline-lg text-body-lg font-bold mb-2">
+                          {item.title}
+                        </h4>
+                        <p className="text-on-surface-variant font-sans">
+                          {item.desc}
+                        </p>
+                      </div>
+                    </motion.div>
+                  ))}
+                </div>
               ))}
             </div>
           </motion.div>
