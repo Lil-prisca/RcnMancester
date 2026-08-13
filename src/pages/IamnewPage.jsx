@@ -1,7 +1,9 @@
 import { motion } from "framer-motion";
 import { useState } from "react";
 import { Link } from "react-router-dom";
-import neww from "../assets/welcomehere.jpg";
+
+// import churchimg from "../assets/P1011283.jpg";
+import churchimg from "../assets/weAreGlad2.jpg";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import { FaCross, FaUsers, FaShirt, FaClock, FaHeart } from "react-icons/fa6";
@@ -81,14 +83,14 @@ const IAmNewPage = () => {
     <div className=" min-h-screen text-white">
       <Navbar />
       {/* Hero */}
-      <section className="relative min-h-[60vh] flex items-center overflow-hidden">
+      <section className="relative h-[60vh] md:h-[100vh] flex items-center overflow-hidden">
         <div className="absolute inset-0 z-0">
           <img
-            className="w-full h-full object-cover opacity-30"
+            className="w-full h-full object-cover object-center opacity-30"
             alt="Welcoming church gathering"
-            src={neww}
+            src={churchimg}
           />
-          <div className="absolute inset-0 bg-gradient-to-t from-[#19143E] via-[#19143E]/70 to-[#19143E]/40" />
+          <div className="absolute inset-0 bg-gradient-to-r from-[#19143E] via-[#19143E]/70 to-[#19143E]/20" />
         </div>
 
         <div className="relative z-10 max-w-4xl  px-6 lg:px-10 py-32 text-left">

@@ -1,6 +1,8 @@
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
-import worship from "../assets/worship.jpg";
+// import worship from "../assets/worship.jpg";
+import land from "../assets/landdingimg.jpg";
+
 
 const Hero = () => {
   return (
@@ -10,7 +12,7 @@ const Hero = () => {
         <img
           className="w-full h-full object-cover opacity-40"
           alt="large gathering"
-          src={worship}
+          src={land}
         />
         <div className="absolute inset-0 bg-gradient-to-r from-[#19143E] via-[#19143E]/60 to-transparent"></div>
       </div>
