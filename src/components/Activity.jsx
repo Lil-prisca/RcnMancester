@@ -1,4 +1,4 @@
-// import prayergroup from "../assets/prayercord.jpg";
+import prayergroup from "../assets/prayercord.jpg";
 import prayer2 from "../assets/prayercord2.jpg";
 // import prayer2 from "../assets/prayer2.jpg";
 import children from "../assets/children.png";
