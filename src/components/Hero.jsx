@@ -1,8 +1,7 @@
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 // import worship from "../assets/worship.jpg";
-import land from "../assets/landdingimg.jpg";
-
+import land from "../assets/Aactivities/img2.jpg";
 
 const Hero = () => {
   return (

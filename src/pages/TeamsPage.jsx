@@ -3,7 +3,7 @@ import setman from "../assets/setman-2.webp";
 import man1 from "../assets/Rev. George Agbike.jpeg";
 import woman from "../assets/aab.png";
 import Footer from "../components/Footer";
-// import man2 from "../assets/pke.jpeg";
+import childrenleader from "../assets/children dept.jpg";
 const TeamMember = [
   {
     img: setman,
@@ -20,6 +20,12 @@ const TeamMember = [
     img: man1,
     name: "Rev. George Agbike",
     position: "Point man, Remnant Christian Network Manchester",
+  },
+  {
+    img: childrenleader,
+    name: "Sarah George",
+    position:
+      " Head of Children's Department, Remnant Christian Network Manchester",
   },
 ];
 

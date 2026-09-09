@@ -1,10 +1,59 @@
+import { useState } from "react";
+import emailjs from "@emailjs/browser";
 import {
   FaFacebookF,
   FaInstagram,
   FaYoutube,
   FaWhatsapp,
 } from "react-icons/fa";
+
+const EMAILJS_SERVICE_ID = "service_piy6fyu";
+const EMAILJS_CONTACT_TEMPLATE_ID = "template_zkg3vgk";
+const EMAILJS_PUBLIC_KEY = "Lb_ogUAd-BxtvtjuV";
+const NOTIFY_EMAIL = "layodemo2@gmail.com"; //
+
 const ContactInfo = () => {
+  const [submitted, setSubmitted] = useState(false);
+  const [submitting, setSubmitting] = useState(false);
+  const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    phone: "",
+    contactConsent: "",
+    subject: "General Inquiry",
+    message: "",
+    gdprConsent: false,
+  });
+
+  async function handleSubmit(e) {
+    e.preventDefault();
+    setSubmitting(true);
+
+    try {
+      await emailjs.send(
+        EMAILJS_SERVICE_ID,
+        EMAILJS_CONTACT_TEMPLATE_ID,
+        {
+          to_email: NOTIFY_EMAIL,
+          from_name: formData.name,
+          from_email: formData.email,
+          phone: formData.phone,
+          contactConsent: formData.contactConsent,
+          subject: formData.subject,
+          message: formData.message,
+        },
+        EMAILJS_PUBLIC_KEY,
+      );
+    } catch (emailErr) {
+      console.error("Email send error:", emailErr);
+      setSubmitting(false);
+      return;
+    }
+
+    setSubmitting(false);
+    setSubmitted(true);
+  }
+
   return (
     <section className="py-24 max-w-7xl mx-auto px-8">
       <div className="grid grid-cols-1 lg:grid-cols-12 gap-12">
@@ -15,96 +64,182 @@ const ContactInfo = () => {
             Have questions? We'd love to hear from you. Send us a message and
             our team will get back to you within 24 hours.
           </p>
-          <form className="  bg-black/20 p-5 px-6  rounded-2xl space-y-6">
-            <div className="space-y-2">
-              <label className="text-sm font-semibold text-on-surface-variant">
-                FULL NAME
-              </label>
-              <input
-                className="w-full bg-surface-container border-none rounded-lg p-4 focus:ring-2 focus:ring-primary"
-                // placeholder="John Doe"
-                type="text"
-              />
+
+          {submitted ? (
+            <div className="bg-black/20 p-8 rounded-2xl text-center">
+              <div className="w-16 h-16 rounded-full bg-primary/20 border border-primary/30 flex items-center justify-center mx-auto mb-4">
+                <svg
+                  className="w-8 h-8 text-primary"
+                  viewBox="0 0 20 20"
+                  fill="none"
+                >
+                  <path
+                    d="M4 10l4 4 8-8"
+                    stroke="currentColor"
+                    strokeWidth="1.5"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                  />
+                </svg>
+              </div>
+              <h4 className="text-xl font-bold mb-2 text-navy">Message Sent</h4>
+              <p className="text-on-surface-variant text-sm">
+                Thanks for reaching out — our team will get back to you within
+                24 hours.
+              </p>
             </div>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-              {/* email */}
+          ) : (
+            <form
+              className="  bg-black/20 p-5 px-6  rounded-2xl space-y-6"
+              onSubmit={handleSubmit}
+            >
               <div className="space-y-2">
                 <label className="text-sm font-semibold text-on-surface-variant">
-                  EMAIL ADDRESS
+                  FULL NAME
                 </label>
                 <input
                   className="w-full bg-surface-container border-none rounded-lg p-4 focus:ring-2 focus:ring-primary"
-                  // placeholder="john@example.com"
-                  type="email"
+                  type="text"
+                  required
+                  value={formData.name}
+                  onChange={(e) =>
+                    setFormData({ ...formData, name: e.target.value })
+                  }
                 />
               </div>
-              {/* watapp */}
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                {/* email */}
+                <div className="space-y-2">
+                  <label className="text-sm font-semibold text-on-surface-variant">
+                    EMAIL ADDRESS
+                  </label>
+                  <input
+                    className="w-full bg-surface-container border-none rounded-lg p-4 focus:ring-2 focus:ring-primary"
+                    type="email"
+                    required
+                    value={formData.email}
+                    onChange={(e) =>
+                      setFormData({ ...formData, email: e.target.value })
+                    }
+                  />
+                </div>
+                {/* watapp */}
+                <div>
+                  <label className="text-sm font-semibold text-on-surface-variant">
+                    Phone Number(WhatsApp Preferred)
+                  </label>
+                  <input
+                    type="tel"
+                    className="w-full bg-surface-container border-none rounded-lg p-4 focus:ring-2 focus:ring-primary"
+                    value={formData.phone}
+                    onChange={(e) =>
+                      setFormData({ ...formData, phone: e.target.value })
+                    }
+                  />
+                </div>
+              </div>
+              {/* contact-permission */}
               <div>
+                <label className="text-black/60 text-xs font-medium mb-2 block">
+                  Would you like us to contact you?
+                </label>
+
+                <div className="flex items-center gap-6">
+                  <label className="flex items-center gap-2 text-black">
+                    <input
+                      type="radio"
+                      name="contactConsent"
+                      value="yes"
+                      checked={formData.contactConsent === "yes"}
+                      onChange={(e) =>
+                        setFormData({
+                          ...formData,
+                          contactConsent: e.target.value,
+                        })
+                      }
+                    />
+                    Yes
+                  </label>
+
+                  <label className="flex items-center gap-2 text-black">
+                    <input
+                      type="radio"
+                      name="contactConsent"
+                      value="no"
+                      checked={formData.contactConsent === "no"}
+                      onChange={(e) =>
+                        setFormData({
+                          ...formData,
+                          contactConsent: e.target.value,
+                        })
+                      }
+                    />
+                    No
+                  </label>
+                </div>
+              </div>
+              <div className="space-y-2">
                 <label className="text-sm font-semibold text-on-surface-variant">
-                  Phone Number(WhatsApp Preferred)
+                  SUBJECT
                 </label>
-                <input
-                  type="tel"
-                  // placeholder="+44 7000 000000"
+                <select
+                  className="w-full bg-surface-container border-none rounded-lg p-4 pr-2 focus:ring-2 focus:ring-primary"
+                  value={formData.subject}
+                  onChange={(e) =>
+                    setFormData({ ...formData, subject: e.target.value })
+                  }
+                >
+                  <option>General Inquiry</option>
+                  <option>Prayer Request</option>
+                  <option>Volunteer Opportunities</option>
+                  <option>Giving Support</option>
+                  <option>Testimonies</option>
+                </select>
+              </div>
+              <div className="space-y-2">
+                <label className="text-sm font-semibold text-on-surface-variant">
+                  MESSAGE
+                </label>
+                <textarea
                   className="w-full bg-surface-container border-none rounded-lg p-4 focus:ring-2 focus:ring-primary"
-                />
+                  rows="5"
+                  value={formData.message}
+                  onChange={(e) =>
+                    setFormData({ ...formData, message: e.target.value })
+                  }
+                ></textarea>
               </div>
-            </div>
-            {/* contact-permission */}
-            <div>
-              <label className="text-black/60 text-xs font-medium mb-2 block">
-                Would you like us to contact you?
-              </label>
+              <div>
+                <label className="flex items-start gap-3 text-black/60 text-xs">
+                  <input
+                    type="checkbox"
+                    className="mt-1"
+                    checked={formData.gdprConsent}
+                    onChange={(e) =>
+                      setFormData({
+                        ...formData,
+                        gdprConsent: e.target.checked,
+                      })
+                    }
+                  />
 
-              <div className="flex items-center gap-6">
-                <label className="flex items-center gap-2 text-black">
-                  <input type="radio" name="contactConsent" value="yes" />
-                  Yes
-                </label>
-
-                <label className="flex items-center gap-2 text-black">
-                  <input type="radio" name="contactConsent" value="no" />
-                  No
+                  <span>
+                    I agree to my data being processed in line with GDPR. We
+                    respect your privacy and will only use this information for
+                    RCN Cumbria updates.
+                  </span>
                 </label>
               </div>
-            </div>
-            <div className="space-y-2">
-              <label className="text-sm font-semibold text-on-surface-variant">
-                SUBJECT
-              </label>
-              <select className="w-full bg-surface-container border-none rounded-lg p-4 pr-2 focus:ring-2 focus:ring-primary">
-                <option>General Inquiry</option>
-                <option>Prayer Request</option>
-                <option>Volunteer Opportunities</option>
-                <option>Giving Support</option>
-                <option>Testimonies</option>
-              </select>
-            </div>
-            <div className="space-y-2">
-              <label className="text-sm font-semibold text-on-surface-variant">
-                MESSAGE
-              </label>
-              <textarea
-                className="w-full bg-surface-container border-none rounded-lg p-4 focus:ring-2 focus:ring-primary"
-                rows="5"
-              ></textarea>
-            </div>
-            <div>
-              <label className="flex items-start gap-3 text-black/60 text-xs">
-                <input type="checkbox" className="mt-1" />
 
-                <span>
-                  I agree to my data being processed in line with GDPR. We
-                  respect your privacy and will only use this information for
-                  RCN Cumbria updates.
-                </span>
-              </label>
-            </div>
-
-            <button className="bg-primary text-white hover:bg-on-primary hover:text-primary px-10 py-4 rounded-xl font-bold hover:opacity-90 transition-all">
-              Send Message
-            </button>
-          </form>
+              <button
+                type="submit"
+                disabled={submitting}
+                className="bg-primary text-white hover:bg-on-primary hover:text-primary px-10 py-4 rounded-xl font-bold hover:opacity-90 transition-all disabled:opacity-60 disabled:cursor-not-allowed"
+              >
+                {submitting ? "Sending…" : "Send Message"}
+              </button>
+            </form>
+          )}
         </div>
         {/* <!-- Info Area & Map --> */}
         <div className="lg:col-span-5 flex flex-col gap-8">

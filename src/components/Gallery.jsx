@@ -1,11 +1,11 @@
 import { motion } from "framer-motion";
-import img1 from "../assets/Aactivities/img1.jpeg";
+import img1 from "../assets/pointman&wife.jpg";
 import img2 from "../assets/Aactivities/img2.jpg";
 import img3 from "../assets/Aactivities/img3.gif";
-import img4 from "../assets/Aactivities/img4.jpeg";
-import img5 from "../assets/Aactivities/img5.jpeg";
-import img6 from "../assets/Aactivities/img6.jpeg";
-import img7 from "../assets/Aactivities/img7.jpeg";
+// import img4 from "../assets/Aactivities/img4.jpeg";
+// import img5 from "../assets/Aactivities/img5.jpeg";
+// import img6 from "../assets/Aactivities/img6.jpeg";
+// import img7 from "../assets/Aactivities/img7.jpeg";
 import img8 from "../assets/Aactivities/img8.jpeg";
 import img9 from "../assets/Aactivities/img9.jpeg";
 import img10 from "../assets/Aactivities/img10.jpeg";
@@ -24,7 +24,7 @@ import img22 from "../assets/Aactivities/img22.jpg";
 import img23 from "../assets/Aactivities/img23.jpg";
 import img24 from "../assets/Aactivities/img24.jpg";
 import img25 from "../assets/Aactivities/img25.jpg";
-import img26 from "../assets/Aactivities/img26.jpg";
+// import img26 from "../assets/Aactivities/img26.jpg";
 import img27 from "../assets/Aactivities/img27.jpg";
 import img28 from "../assets/Aactivities/img28.jpg";
 import img29 from "../assets/Aactivities/img29.jpg";
@@ -50,15 +50,14 @@ import img48 from "../assets/Aactivities/img48.jpg";
 // import img49 from "../assets/Aactivities/img49.jpg";
 // import img50 from "../assets/Aactivities/img50.jpg";
 
-
 const Images = [
   { id: 1, img: img1 },
   { id: 2, img: img2 },
   { id: 3, img: img3 },
-  { id: 4, img: img4 },
-  { id: 5, img: img5 },
-  { id: 6, img: img6 },
-  { id: 7, img: img7 },
+  // { id: 4, img: img4 },
+  // { id: 5, img: img5 },
+  // { id: 6, img: img6 },
+  // { id: 7, img: img7 },
   { id: 8, img: img8 },
   { id: 9, img: img9 },
   { id: 10, img: img10 },
@@ -77,7 +76,7 @@ const Images = [
   { id: 23, img: img23 },
   { id: 24, img: img24 },
   { id: 25, img: img25 },
-  { id: 26, img: img26 },
+  // { id: 26, img: img26 },
   { id: 27, img: img27 },
   { id: 28, img: img28 },
   { id: 29, img: img29 },

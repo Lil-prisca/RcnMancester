@@ -12,6 +12,11 @@ const Navigations = [
   { label: "About", to: "/about-us" },
   { label: "Contact Us ", to: "/contact-us" },
   { label: "Give", to: "/give" },
+  { label: "I am new", to: "/iamnew" },
+];
+const Navigations2 = [
+  { label: "Policy", to: "/policy" },
+  { label: "Safe-Guarding", to: "/safeguarding" },
 ];
 
 const socials = [
@@ -92,7 +97,18 @@ const Footer = () => {
         <div className=" flex ml-5 mt-8 flex-col">
           <p className="text-[#BF5A16]">Navigations</p>
           {Navigations.map((link) => (
-            <Link key={link.label} to={link.to}>{link.label}</Link>
+            <Link key={link.label} to={link.to}>
+              {link.label}
+            </Link>
+          ))}
+        </div>
+
+        <div className=" flex lg:ml-35 ml-5 mt-8 flex-col">
+          <p className="text-[#BF5A16]"> Privacy and Policies</p>
+          {Navigations2.map((link) => (
+            <Link key={link.label} to={link.to}>
+              {link.label}
+            </Link>
           ))}
         </div>
         {/* </div> */}

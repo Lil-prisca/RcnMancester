@@ -1,12 +1,19 @@
 import { motion } from "framer-motion";
 import { useState } from "react";
 import { Link } from "react-router-dom";
+import emailjs from "@emailjs/browser";
 
 // import churchimg from "../assets/P1011283.jpg";
 import churchimg from "../assets/weAreGlad2.jpg";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import { FaCross, FaUsers, FaShirt, FaClock, FaHeart } from "react-icons/fa6";
+
+// EmailJS config — from your EmailJS dashboard
+const EMAILJS_SERVICE_ID = "service_piy6fyu";
+const EMAILJS_TEMPLATE_ID = "template_78i6cab";
+const EMAILJS_PUBLIC_KEY = "Lb_ogUAd-BxtvtjuV";
+const NOTIFY_EMAIL = "layodemo2@gmail.com"; // where you want submissions delivered
 
 const faqs = [
   {
@@ -55,29 +62,38 @@ const IAmNewPage = () => {
     email: "",
     phone: "",
     visitDate: "",
+    contactConsent: "",
+    message: "",
+    gdprConsent: false,
   });
 
-  // async function handleSubmit(e) {
-  //   e.preventDefault();
-  //   setSubmitting(true);
+  async function handleSubmit(e) {
+    e.preventDefault();
+    setSubmitting(true);
 
-  //   const { error } = await supabase.from("first_timers").insert({
-  //     name: formData.name,
-  //     email: formData.email,
-  //     phone: formData.phone,
-  //     visit_date: formData.visitDate || null,
-  //     status: "new",
-  //   });
+    try {
+      await emailjs.send(
+        EMAILJS_SERVICE_ID,
+        EMAILJS_TEMPLATE_ID,
+        {
+          to_email: NOTIFY_EMAIL,
+          from_name: formData.name,
+          from_email: formData.email,
+          phone: formData.phone,
+          message: formData.message,
+          contactConsent: formData.contactConsent,
+        },
+        EMAILJS_PUBLIC_KEY,
+      );
+    } catch (emailErr) {
+      console.error("Email send error:", emailErr);
+      setSubmitting(false);
+      return;
+    }
 
-  //   if (error) {
-  //     console.error("First timer error:", error.message);
-  //     setSubmitting(false);
-  //     return;
-  //   }
-
-  //   setSubmitting(false);
-  //   setSubmitted(true);
-  // }
+    setSubmitting(false);
+    setSubmitted(true);
+  }
 
   return (
     <div className=" min-h-screen text-white">
@@ -277,7 +293,7 @@ const IAmNewPage = () => {
                 </p>
               </motion.div>
             ) : (
-              <form className="space-y-4">
+              <form className="space-y-4" onSubmit={handleSubmit}>
                 <div>
                   <label className="text-white/60 text-xs font-medium mb-2 block">
                     Full Name *

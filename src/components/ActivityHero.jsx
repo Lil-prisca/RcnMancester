@@ -32,8 +32,7 @@ const ActivityHero = () => {
             transition={{ duration: 0.7, delay: 0.8 }}
             className="text-[18px] text-on-primary max-w-2xl leading-relaxed"
           >
-            Wherever you are, find lets worship and prayer together, lets grow
-            as a family, we'd love for you to be with us.
+          Wherever you are, let's worship and pray together, let's grow as a family, and we'd love for you to be with us
           </motion.p>
         </div>
         <motion.div

@@ -30,7 +30,7 @@ const SpotlightEvent = () => {
           </div>
           <div class="bg-white/10 backdrop-blur-md p-10 rounded-2xl border border-white/10 text-white w-full md:w-auto">
             <p class="text-white/70 text-lg font-body max-w-md mb-5 leading-relaxed">
-              Join us for ddaily lunch hour prayer encounters and many more
+              Join us for daily lunch hour prayer encounters and many more
               Activities
             </p>
             <Link to="/our-activities">

@@ -5,8 +5,9 @@ import { Link } from "react-router-dom";
 import setman2 from "../assets/AAO.jpg";
 import man1 from "../assets/Rev. George Agbike.jpeg";
 import woman from "../assets/aab.png";
+import childrenleader from "../assets/children dept.jpg";
 
-const leaderImages = [setman2, woman, man1];
+const leaderImages = [setman2, woman, man1, childrenleader];
 
 const Team = () => {
   const [currentImg, setCurrentImg] = useState(0);
