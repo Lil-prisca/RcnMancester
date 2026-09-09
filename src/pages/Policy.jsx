@@ -11,7 +11,7 @@ const Policy = () => {
       >
         {/* Introduction */}
         <div>
-          <h2 className="text-primary text-2xl md:text-3xl font-headline font-bold mb-4">
+          <h2 className="text-primary text-2xl md:text-3xl   font-bold mb-4">
             1. Our Commitment to Safeguarding
           </h2>
 
@@ -34,7 +34,7 @@ const Policy = () => {
 
         {/* Purpose */}
         <div>
-          <h2 className="text-primary text-2xl md:text-3xl font-headline font-bold mb-4">
+          <h2 className="text-primary text-2xl md:text-3xl   font-bold mb-4">
             2. Purpose of This Policy
           </h2>
 
@@ -53,7 +53,7 @@ const Policy = () => {
 
         {/* Who is protected */}
         <div>
-          <h2 className="text-primary text-2xl md:text-3xl font-headline font-bold mb-4">
+          <h2 className="text-primary text-2xl md:text-3xl   font-bold mb-4">
             3. Who We Safeguard
           </h2>
 
@@ -76,7 +76,7 @@ const Policy = () => {
 
         {/* Our principles */}
         <div>
-          <h2 className="text-primary text-2xl md:text-3xl font-headline font-bold mb-4">
+          <h2 className="text-primary text-2xl md:text-3xl   font-bold mb-4">
             4. Our Safeguarding Principles
           </h2>
 
@@ -124,7 +124,7 @@ const Policy = () => {
 
         {/* Types of abuse */}
         <div>
-          <h2 className="text-primary text-2xl md:text-3xl font-headline font-bold mb-4">
+          <h2 className="text-primary text-2xl md:text-3xl   font-bold mb-4">
             5. Recognising Abuse and Neglect
           </h2>
 
@@ -146,7 +146,7 @@ const Policy = () => {
 
         {/* Children and young people */}
         <div>
-          <h2 className="text-primary text-2xl md:text-3xl font-headline font-bold mb-4">
+          <h2 className="text-primary text-2xl md:text-3xl   font-bold mb-4">
             6. Safeguarding Children and Young People
           </h2>
 
@@ -173,7 +173,7 @@ const Policy = () => {
 
         {/* Vulnerable adults */}
         <div>
-          <h2 className="text-primary text-2xl md:text-3xl font-headline font-bold mb-4">
+          <h2 className="text-primary text-2xl md:text-3xl   font-bold mb-4">
             7. Safeguarding Adults
           </h2>
 
@@ -194,7 +194,7 @@ const Policy = () => {
 
         {/* Recruitment */}
         <div>
-          <h2 className="text-primary text-2xl md:text-3xl font-headline font-bold mb-4">
+          <h2 className="text-primary text-2xl md:text-3xl   font-bold mb-4">
             8. Recruitment and Training
           </h2>
 
@@ -214,7 +214,7 @@ const Policy = () => {
 
         {/* Reporting */}
         <div>
-          <h2 className="text-primary text-2xl md:text-3xl font-headline font-bold mb-4">
+          <h2 className="text-primary text-2xl md:text-3xl   font-bold mb-4">
             9. Reporting a Safeguarding Concern
           </h2>
 
@@ -246,7 +246,7 @@ const Policy = () => {
 
         {/* Responding to concerns */}
         <div>
-          <h2 className="text-primary text-2xl md:text-3xl font-headline font-bold mb-4">
+          <h2 className="text-primary text-2xl md:text-3xl   font-bold mb-4">
             10. Responding to Concerns
           </h2>
 
@@ -273,7 +273,7 @@ const Policy = () => {
 
         {/* Allegations against leaders */}
         <div>
-          <h2 className="text-primary text-2xl md:text-3xl font-headline font-bold mb-4">
+          <h2 className="text-primary text-2xl md:text-3xl   font-bold mb-4">
             11. Concerns About Church Leaders or Volunteers
           </h2>
 
@@ -293,7 +293,7 @@ const Policy = () => {
 
         {/* Confidentiality */}
         <div>
-          <h2 className="text-primary text-2xl md:text-3xl font-headline font-bold mb-4">
+          <h2 className="text-primary text-2xl md:text-3xl   font-bold mb-4">
             12. Confidentiality and Data Protection
           </h2>
 
@@ -312,7 +312,7 @@ const Policy = () => {
 
         {/* Support */}
         <div>
-          <h2 className="text-primary text-2xl md:text-3xl font-headline font-bold mb-4">
+          <h2 className="text-primary text-2xl md:text-3xl   font-bold mb-4">
             13. Support for Those Affected
           </h2>
 
@@ -333,7 +333,7 @@ const Policy = () => {
 
         {/* Responsibilities */}
         <div>
-          <h2 className="text-primary text-2xl md:text-3xl font-headline font-bold mb-4">
+          <h2 className="text-primary text-2xl md:text-3xl   font-bold mb-4">
             14. Responsibilities of Everyone in the Church
           </h2>
 
@@ -354,7 +354,7 @@ const Policy = () => {
 
         {/* Review */}
         <div>
-          <h2 className="text-primary text-2xl md:text-3xl font-headline font-bold mb-4">
+          <h2 className="text-primary text-2xl md:text-3xl   font-bold mb-4">
             15. Policy Review
           </h2>
 

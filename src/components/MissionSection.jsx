@@ -51,7 +51,7 @@ const MissionSection = () => {
                 delay: 0.3,
                 ease: [0.22, 1, 0.36, 1],
               }}
-              className="text-primary text-4xl md:text-6xl font-headline font-bold mb-8 leading-tight"
+              className="text-primary text-4xl md:text-6xl   font-bold mb-8 leading-tight"
             >
               About <span className="text-tertiary">RCN Manchester</span>
             </motion.h2>
@@ -84,7 +84,7 @@ const MissionSection = () => {
               className="mt-10 space-y-8 max-w-2xl"
             >
               <div>
-                <h3 className="text-primary text-xl md:text-2xl font-headline font-bold mb-2">
+                <h3 className="text-primary text-xl md:text-2xl   font-bold mb-2">
                   A Community of Prayer and the Word
                 </h3>
                 <p className="text-on-surface-variant text-lg leading-relaxed mb-2">
@@ -104,7 +104,7 @@ const MissionSection = () => {
               </div>
 
               <div>
-                <h3 className="text-primary text-xl md:text-2xl font-headline font-bold mb-2">
+                <h3 className="text-primary text-xl md:text-2xl   font-bold mb-2">
                   A Place to Belong and Grow
                 </h3>
                 <p className="text-on-surface-variant text-lg leading-relaxed mb-2">
@@ -122,7 +122,7 @@ const MissionSection = () => {
               </div>
 
               <div>
-                <h3 className="text-primary text-xl md:text-2xl font-headline font-bold mb-2">
+                <h3 className="text-primary text-xl md:text-2xl   font-bold mb-2">
                   Our Commitment to Safeguarding
                 </h3>
                 <p className="text-on-surface-variant text-lg leading-relaxed mb-2">
@@ -140,7 +140,7 @@ const MissionSection = () => {
               </div>
 
               <div>
-                <h3 className="text-primary text-xl md:text-2xl font-headline font-bold mb-2">
+                <h3 className="text-primary text-xl md:text-2xl   font-bold mb-2">
                   Part of a Wider Family
                 </h3>
                 <p className="text-on-surface-variant text-lg leading-relaxed mb-2">

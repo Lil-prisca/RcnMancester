@@ -19,7 +19,7 @@ const LiveSection = () => {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: false }}
             transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1] }}
-            className="font-headline italic text-5xl md:text-7xl text-white mb-8"
+            className=" italic text-5xl md:text-7xl text-white mb-8"
           >
             The Presence
           </motion.h2>
@@ -28,7 +28,7 @@ const LiveSection = () => {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: false }}
             transition={{ duration: 0.7, delay: 0.2 }}
-            className="font-headline text-2xl md:text-3xl text-on-primary font-light italic leading-relaxed"
+            className=" text-2xl md:text-3xl text-on-primary font-light italic leading-relaxed"
           >
             "In His presence is fullness of joy; at His right hand there are
             pleasures forevermore."
@@ -56,7 +56,7 @@ const LiveSection = () => {
             transition={{ duration: 0.7 }}
             className="w-full  md:w-1/2  order-2 md:order-1"
           >
-            <h2 className="  font-headline text-5xl md:text-6xl text-primary">
+            <h2 className="    text-5xl md:text-6xl text-primary">
               Join the Moment.
             </h2>
             <p className="  text-on-surface-variant text-lg">

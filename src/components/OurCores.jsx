@@ -35,7 +35,7 @@ const OurCores = () => {
           transition={{ duration: 0.6 }}
           className="text-center mb-10"
         >
-          <h2 className="font-headline-xl text-headline-xl font-sans text-3xl text-on-primary mb-4">
+          <h2 className=" -xl text-headline-xl font-sans text-3xl text-on-primary mb-4">
             Core Values
           </h2>
           <div className="w-24 h-1 bg-secondary mx-auto"></div>

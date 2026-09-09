@@ -23,7 +23,7 @@ const ActivityExplained = ({
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: false }}
           transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1] }}
-          className="font-headline italic text-5xl md:text-7xl text-white mb-8"
+          className="  italic text-5xl md:text-7xl text-white mb-8"
         >
           {title}
         </motion.h2>
@@ -32,7 +32,7 @@ const ActivityExplained = ({
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: false }}
           transition={{ duration: 0.7, delay: 0.2 }}
-          className="font-headline text-2xl md:text-2xl text-on-primary font-light italic leading-relaxed"
+          className="  text-2xl md:text-2xl text-on-primary font-light italic leading-relaxed"
         >
           {description}
         </motion.p>
@@ -41,7 +41,7 @@ const ActivityExplained = ({
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: false }}
           transition={{ duration: 0.7, delay: 0.2 }}
-          className="font-headline text-1xl md:text-2xl text-on-primary font-light italic leading-relaxed"
+          className="  text-1xl md:text-2xl text-on-primary font-light italic leading-relaxed"
         >
           {verse}
         </motion.p>
@@ -65,7 +65,7 @@ const ActivityExplained = ({
     //         transition={{ duration: 0.7 }}
     //         className="flex-1 max-w-xl"
     //       >
-    //         <h3 className="text-4xl md:text-5xl font-headline font-bold leading-tight mb-6">
+    //         <h3 className="text-4xl md:text-5xl   font-bold leading-tight mb-6">
     //           {title}
     //         </h3>
     //         <p className="text-on-primary text-lg leading-relaxed">

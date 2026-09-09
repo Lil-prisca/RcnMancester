@@ -30,7 +30,7 @@ const Mission = () => {
             viewport={{ once: true }}
             transition={{ duration: 0.7 }}
           >
-            <h2 className="font-headline-xl font-sans font-bold text-[30px] text-black mb-5 text-3xl">
+            <h2 className=" -xl font-sans font-bold text-[30px] text-black mb-5 text-3xl">
               Our Sacred Mandate
             </h2>
             <p className="font-body-lg text-black mb-5 leading-relaxed">
@@ -83,7 +83,7 @@ const Mission = () => {
                 },
               ].map((group) => (
                 <div key={group.heading} className="space-y-3">
-                  <h3 className="font-headline-lg text-body-xl font-bold">
+                  <h3 className=" -lg text-body-xl font-bold">
                     {group.heading}
                   </h3>
                   {group.items.map((item, i) => (
@@ -99,7 +99,7 @@ const Mission = () => {
                         {item.icon}
                       </div>
                       <div>
-                        <h4 className="font-headline-lg text-body-lg font-bold mb-2">
+                        <h4 className=" -lg text-body-lg font-bold mb-2">
                           {item.title}
                         </h4>
                         <p className="text-on-surface-variant font-sans">

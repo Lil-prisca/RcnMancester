@@ -29,7 +29,7 @@ const Team = () => {
           transition={{ duration: 0.6 }}
           className="mb-10 mt-4"
         >
-          <h2 className="font-headline-lg font-sans text-3xl font-bold text-headline-lg">
+          <h2 className=" -lg font-sans text-3xl font-bold text-headline-lg">
             Spiritual Oversight
           </h2>
           <div className="w-20 h-1 bg-primary mt-1"></div>
@@ -55,7 +55,7 @@ const Team = () => {
               <span className="font-label-sm text-[24px] text-primary mb-2">
                 Apostle Arome Osayi
               </span>
-              <h3 className="font-headline-md text-[10px] mb-4">
+              <h3 className=" -md text-[10px] mb-4">
                 Set Man, Remnant Christian Network
               </h3>
               <p className="font-body-md text-on-surface-variant mb-6 italic">
@@ -88,7 +88,7 @@ const Team = () => {
                 />
               </AnimatePresence>
             </div>
-            <h3 className="font-headline-md text-headline-md mb-4">
+            <h3 className=" -md text-headline-md mb-4">
               Manchester Leadership Team
             </h3>
             <p className="font-body-md text-on-primary-container opacity-90 mb-8">
