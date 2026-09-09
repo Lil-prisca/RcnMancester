@@ -9,7 +9,7 @@ const OurActivitiesPage = () => {
   return (
     <div className="">
       <Navbar />
-      <div className="w-100% max-w-400 m-auto">
+      <div className="w-100% max-w-400 m-auto font-sans">
         <ActivityHero />
         <Activity />
         <ActivityExplained />
