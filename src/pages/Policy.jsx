@@ -365,40 +365,6 @@ const Policy = () => {
             requirements.
           </p>
         </div>
-
-        {/* Contact */}
-        <div className="p-6 md:p-8 rounded-2xl bg-surface-variant border border-outline">
-          <h2 className="text-primary text-2xl md:text-3xl font-headline font-bold mb-4">
-            Safeguarding Contact
-          </h2>
-
-          <p>
-            If you have a safeguarding concern or need to speak to someone about
-            safeguarding at RCN Manchester, please contact the church's
-            designated safeguarding lead or a member of the church leadership.
-          </p>
-
-          <p className="mt-4">
-            <strong>Church:</strong> RCN Manchester
-          </p>
-
-          <p>
-            <strong>Safeguarding Lead:</strong> [Name]
-          </p>
-
-          <p>
-            <strong>Email:</strong> [Safeguarding Email]
-          </p>
-
-          <p>
-            <strong>Telephone:</strong> [Safeguarding Phone Number]
-          </p>
-
-          <p className="mt-6 text-sm">
-            This policy should be read alongside RCN Manchester's safeguarding
-            procedures and any other relevant church policies.
-          </p>
-        </div>
       </div>
       <Footer />
     </div>
