@@ -168,16 +168,7 @@ export default function SafeguardingPage() {
               </p>
               <p>Sarah Agbike</p>
             </div>
-            <div>
-              <p
-                className="text-xs font-semibold uppercase tracking-wide mb-1"
-                style={{ color: "var(--sg-accent)" }}
-              >
-                Deputy Designated Safeguarding Lead
-              </p>
-              {/* TODO: fill in once Bro Layò sends the DDSL's name */}
-              <p style={{ color: "var(--sg-ink-soft)" }}>Coming soon</p>
-            </div>
+
             <div>
               <p
                 className="text-xs font-semibold uppercase tracking-wide mb-1"
@@ -186,17 +177,9 @@ export default function SafeguardingPage() {
                 Email
               </p>
               {/* TODO: fill in once Bro Layò sends the safeguarding email */}
-              <p style={{ color: "var(--sg-ink-soft)" }}>Coming soon</p>
-            </div>
-            <div>
-              <p
-                className="text-xs font-semibold uppercase tracking-wide mb-1"
-                style={{ color: "var(--sg-accent)" }}
-              >
-                Telephone
+              <p style={{ color: "var(--sg-ink-soft)" }}>
+                info@rcnmanchester.org
               </p>
-              {/* TODO: fill in once Bro Layò sends the safeguarding phone number */}
-              <p style={{ color: "var(--sg-ink-soft)" }}>Coming soon</p>
             </div>
           </div>
 
