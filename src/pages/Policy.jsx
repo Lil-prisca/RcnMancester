@@ -5,7 +5,10 @@ const Policy = () => {
   return (
     <div>
       <Navbar />
-      <div className="space-y-10 text-on-surface-variant text-lg leading-relaxed">
+      <div
+        className="max-w-2xl mx-auto px-10 py-25 md:py-24"
+        style={{ color: "var(--sg-ink)", backgroundColor: "var(--sg-bg)" }}
+      >
         {/* Introduction */}
         <div>
           <h2 className="text-primary text-2xl md:text-3xl font-headline font-bold mb-4">

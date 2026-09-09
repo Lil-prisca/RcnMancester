@@ -47,7 +47,7 @@ export default function SafeguardingPage() {
       className="min-h-screen"
     >
       <div
-        className="max-w-2xl mx-auto px-6 py-16 md:py-24"
+        className="max-w-2xl mx-auto px-6 py-25 md:py-24"
         style={{ color: "var(--sg-ink)", backgroundColor: "var(--sg-bg)" }}
       >
         <Navbar />
