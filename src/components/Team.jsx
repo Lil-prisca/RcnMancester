@@ -6,8 +6,9 @@ import setman2 from "../assets/AAO.jpg";
 import man1 from "../assets/Rev. George Agbike.jpeg";
 import woman from "../assets/aab.png";
 import childrenleader from "../assets/children dept.jpg";
+import teensleader from "../assets/teens pastor.jpeg";
 
-const leaderImages = [setman2, woman, man1, childrenleader];
+const leaderImages = [setman2, woman, man1, childrenleader, teensleader];
 
 const Team = () => {
   const [currentImg, setCurrentImg] = useState(0);
