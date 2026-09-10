@@ -1,6 +1,6 @@
 const Give = () => {
   return (
-    <section className="   ">
+    <section className="font-sans">
       <div className=" bg-primary w-full h-120 mt-20  relative overflow-hidden  px-5 py-10 md:px-15 md:py-15 text-white ">
         <div className="absolute inset-0 opacity-20 pointer-events-none">
           <img

@@ -47,7 +47,7 @@ const socials = [
 ];
 const Footer = () => {
   return (
-    <div className="bg-[#19143E] pt-5">
+    <div className="bg-[#19143E] pt-5 font-sans">
       <div className=" w-[90%] max-w-400 mx-auto  text-white  flex flex-col  md:flex-row  py-3 ">
         {/* curc Infoo */}
         <div className="  w-90 md:w-100  px-5">

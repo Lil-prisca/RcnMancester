@@ -5,7 +5,7 @@ import land from "../assets/Aactivities/img2.jpg";
 
 const Hero = () => {
   return (
-    <section className="relative  min-h-[70vh] mt-20 py-15 flex items-center overflow-hidden bg-[#19143E] ">
+    <section className="relative  min-h-[70vh] mt-20 py-15 flex items-center overflow-hidden bg-[#19143E] font-sans">
       {/* hero background image */}
       <div className="absolute inset-0 z-0">
         <img

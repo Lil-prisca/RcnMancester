@@ -4,7 +4,7 @@ import people from "../assets/Womansingingworship.jpeg";
 
 const ActivityHero = () => {
   return (
-    <section className="relative min-h-150 md:min-h-100 py-10 flex items-center overflow-hidden">
+    <section className="relative min-h-150 md:min-h-100 py-10 flex items-center overflow-hidden font-sans">
       <div className="absolute inset-0 z-0">
         <img
           className="w-full h-full object-cover opacity-40 grayscale hover:grayscale-0 transition-all duration-1000"

@@ -108,7 +108,7 @@ const Images = [
 
 const Gallery = () => {
   return (
-    <div className="mt-10 flex flex-col items-center">
+    <div className="mt-10 flex flex-col items-center font-sans">
       <h2 className="items-center text-center font-bold text-2xl">Gallery</h2>
       <div className=" my-5 lg:w-5xl  justify-center items-center px-1 grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-1">
         {Images.map((value) => (

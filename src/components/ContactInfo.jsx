@@ -55,7 +55,7 @@ const ContactInfo = () => {
   }
 
   return (
-    <section className="py-24 max-w-7xl mx-auto px-8">
+    <section className="py-24 max-w-7xl mx-auto px-8 font-sans">
       <div className="grid grid-cols-1 lg:grid-cols-12 gap-12">
         {/* <!-- Form Area --> */}
         <div className="lg:col-span-7">

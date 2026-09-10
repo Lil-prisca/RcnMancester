@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 
 const ContactHero = () => {
   return (
-    <section className="relative  md:min-h-90 flex items-center overflow-hidden">
+    <section className="relative  md:min-h-90 flex items-center overflow-hidden font-sans">
       <div className="absolute inset-0 z-0">
         <img
           className="w-full h-full object-cover object-top opacity-40 grayscale hover:grayscale-0 transition-all duration-1000"

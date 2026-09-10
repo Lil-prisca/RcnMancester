@@ -3,7 +3,7 @@ import about from "../assets/about-talk.jpg";
 
 const AboutHero = () => {
   return (
-    <section className="relative min-h-160 md:min-h-150 flex items-center overflow-hidden">
+    <section className="relative min-h-160 md:min-h-150 flex items-center overflow-hidden font-sans">
       <div className="absolute inset-0 z-0">
         <img
           className="w-full h-full object-cover  object-top opacity-40 grayscale hover:grayscale-0 transition-all duration-1000"

@@ -1,7 +1,7 @@
 import { FaFileSignature } from "react-icons/fa6";
 const GiveSection = () => {
   return (
-    <section class="bg-surface-container-low py-24">
+    <section class="bg-surface-container-low py-24 font-sans">
       <div class="max-w-7xl mx-auto px-8">
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
           {/* <!-- Giving Logic --> */}

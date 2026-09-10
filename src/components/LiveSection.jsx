@@ -4,7 +4,7 @@ import { FaCirclePlay } from "react-icons/fa6";
 const LiveSection = () => {
   return (
     <>
-      <section className="h-[419px] w-full relative flex items-center justify-center text-center">
+      <section className="h-[419px] w-full relative flex items-center justify-center text-center font-sans">
         <div className="absolute inset-0">
           <img
             className="w-full h-full object-cover"
@@ -44,7 +44,7 @@ const LiveSection = () => {
       </section>
 
       {/* Live broadcast */}
-      <section className="relative py-20 bg-on-primary overflow-hidden">
+      <section className="relative py-20 bg-on-primary overflow-hidden font-sans">
         <div className="absolute top-0 right-0 w-1/2 h-full opacity-20 pointer-events-none">
           <div className="w-full h-full bg-gradient-to-l from-primary/30 to-transparent"></div>
         </div>
